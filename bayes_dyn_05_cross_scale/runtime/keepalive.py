@@ -1,0 +1,1 @@
+print("KEEPALIVE_OK")

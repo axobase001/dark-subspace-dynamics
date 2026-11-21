@@ -1,0 +1,373 @@
+{
+  "diag1_z20_split_additivity_max_rel_err": 1.7393652627552264e-06,
+  "diag1_mean_z24_from_dark_norm": 1.610392032672145,
+  "diag1_mean_z24_from_comp_norm": 2.0857862961109053,
+  "diag1_mean_abs_g_from_dark": 0.03466937901756258,
+  "diag1_mean_abs_g_from_comp": 0.08782954252271415,
+  "diag1_per_context": [
+    {
+      "context_id": "CID4_ST_009",
+      "family": "state_tracking",
+      "z20_dark_norm": 0.8933895478105826,
+      "z20_comp_norm": 1.100837229115594,
+      "z24_from_dark_norm": 3.9498243211372577,
+      "z24_from_comp_norm": 2.6723571120894634,
+      "g_dot_z24_from_dark": 0.07886910800597438,
+      "g_dot_z24_from_comp": 0.13234216390224876,
+      "g_dot_z24_total": 0.2112110129729512,
+      "exact_sum_rel_err": 8.35129714055086e-07
+    },
+    {
+      "context_id": "CID4_ST_015",
+      "family": "state_tracking",
+      "z20_dark_norm": 0.580247915574675,
+      "z20_comp_norm": 1.2498534904453293,
+      "z24_from_dark_norm": 1.5222650227812289,
+      "z24_from_comp_norm": 2.84097439560348,
+      "g_dot_z24_from_dark": 0.054533299116088854,
+      "g_dot_z24_from_comp": -0.04532972434263094,
+      "g_dot_z24_total": 0.009203869687025287,
+      "exact_sum_rel_err": 9.023242005329805e-07
+    },
+    {
+      "context_id": "CID4_ST_020",
+      "family": "state_tracking",
+      "z20_dark_norm": 0.6010841819460302,
+      "z20_comp_norm": 1.0254556017348238,
+      "z24_from_dark_norm": 1.0904584493012721,
+      "z24_from_comp_norm": 1.6734978523609494,
+      "g_dot_z24_from_dark": 0.020985589960240948,
+      "g_dot_z24_from_comp": 0.15624767292407477,
+      "g_dot_z24_total": 0.17723318770335292,
+      "exact_sum_rel_err": 1.7393652627552264e-06
+    },
+    {
+      "context_id": "CID4_ST_016",
+      "family": "state_tracking",
+      "z20_dark_norm": 0.6636999398027631,
+      "z20_comp_norm": 1.2701624396302098,
+      "z24_from_dark_norm": 1.445901166025969,
+      "z24_from_comp_norm": 2.718748572286978,
+      "g_dot_z24_from_dark": 0.10001078160576408,
+      "g_dot_z24_from_comp": -0.1157853350230769,
+      "g_dot_z24_total": -0.015774533274675095,
+      "exact_sum_rel_err": 1.5544830935958444e-06
+    },
+    {
+      "context_id": "CID4_AT_012",
+      "family": "attribute_binding",
+      "z20_dark_norm": 0.6054605982403263,
+      "z20_comp_norm": 1.0379498583719027,
+      "z24_from_dark_norm": 1.5456105231006418,
+      "z24_from_comp_norm": 2.288893164875848,
+      "g_dot_z24_from_dark": -0.05155644801376492,
+      "g_dot_z24_from_comp": 0.17623684438816195,
+      "g_dot_z24_total": 0.12468028595354277,
+      "exact_sum_rel_err": 1.1037528134716633e-06
+    },
+    {
+      "context_id": "CID4_AT_013",
+      "family": "attribute_binding",
+      "z20_dark_norm": 0.620691842975154,
+      "z20_comp_norm": 1.047139683292686,
+      "z24_from_dark_norm": 1.5979684647264674,
+      "z24_from_comp_norm": 2.099129373294971,
+      "g_dot_z24_from_dark": 0.016163724768542647,
+      "g_dot_z24_from_comp": -0.024597451664581098,
+      "g_dot_z24_total": -0.008434028560442616,
+      "exact_sum_rel_err": 1.1779672995785399e-06
+    },
+    {
+      "context_id": "CID4_AT_024",
+      "family": "attribute_binding",
+      "z20_dark_norm": 0.6241277162084717,
+      "z20_comp_norm": 0.9814045104515899,
+      "z24_from_dark_norm": 1.9330410424617752,
+      "z24_from_comp_norm": 1.795311728384296,
+      "g_dot_z24_from_dark": 0.006107964117720254,
+      "g_dot_z24_from_comp": -0.09962186134318601,
+      "g_dot_z24_total": -0.09351379770890816,
+      "exact_sum_rel_err": 1.105378720197675e-06
+    },
+    {
+      "context_id": "CID4_AT_022",
+      "family": "attribute_binding",
+      "z20_dark_norm": 0.6385170624514706,
+      "z20_comp_norm": 1.0455923834200087,
+      "z24_from_dark_norm": 1.3033283063240113,
+      "z24_from_comp_norm": 2.1570907481319344,
+      "g_dot_z24_from_dark": -0.00419777108949761,
+      "g_dot_z24_from_comp": -0.09876679385066992,
+      "g_dot_z24_total": -0.10296464425532721,
+      "exact_sum_rel_err": 1.0843653124713075e-06
+    },
+    {
+      "context_id": "CID4_SI_011",
+      "family": "simple_arithmetic",
+      "z20_dark_norm": 0.6564676286511719,
+      "z20_comp_norm": 1.240637475528941,
+      "z24_from_dark_norm": 1.4372952184633703,
+      "z24_from_comp_norm": 1.9855293467618949,
+      "g_dot_z24_from_dark": 0.013170818993609994,
+      "g_dot_z24_from_comp": 0.0025216393242944862,
+      "g_dot_z24_total": 0.015692265102957202,
+      "exact_sum_rel_err": 1.4384655682567381e-06
+    },
+    {
+      "context_id": "CID4_SI_005",
+      "family": "simple_arithmetic",
+      "z20_dark_norm": 0.6313747219007946,
+      "z20_comp_norm": 1.1251864841240733,
+      "z24_from_dark_norm": 1.1953338222047478,
+      "z24_from_comp_norm": 2.088845198043779,
+      "g_dot_z24_from_dark": -0.013822669198077182,
+      "g_dot_z24_from_comp": -0.1770461031429363,
+      "g_dot_z24_total": -0.19086867696254756,
+      "exact_sum_rel_err": 1.2366704829893055e-06
+    },
+    {
+      "context_id": "CID4_SI_001",
+      "family": "simple_arithmetic",
+      "z20_dark_norm": 0.6901859259257431,
+      "z20_comp_norm": 1.220207388051068,
+      "z24_from_dark_norm": 1.7356372993247975,
+      "z24_from_comp_norm": 2.0264352486933705,
+      "g_dot_z24_from_dark": -0.02417073503532356,
+      "g_dot_z24_from_comp": 0.0005063766606834951,
+      "g_dot_z24_total": -0.02366459219189241,
+      "exact_sum_rel_err": 1.1590987433299005e-06
+    },
+    {
+      "context_id": "CID4_SI_006",
+      "family": "simple_arithmetic",
+      "z20_dark_norm": 0.5935699800871189,
+      "z20_comp_norm": 1.1001000514101527,
+      "z24_from_dark_norm": 1.1719534802340923,
+      "z24_from_comp_norm": 1.9164148751470012,
+      "g_dot_z24_from_dark": -0.031652825944865404,
+      "g_dot_z24_from_comp": 0.027510937073229495,
+      "g_dot_z24_total": -0.004141874622103428,
+      "exact_sum_rel_err": 1.5393603475524756e-06
+    },
+    {
+      "context_id": "CID4_IN_002",
+      "family": "instruction_priority",
+      "z20_dark_norm": 0.7002676535373343,
+      "z20_comp_norm": 1.0292197504915312,
+      "z24_from_dark_norm": 1.7114324905270433,
+      "z24_from_comp_norm": 1.883289357579186,
+      "g_dot_z24_from_dark": 0.009597797917072382,
+      "g_dot_z24_from_comp": 0.030325057740652223,
+      "g_dot_z24_total": 0.039923005343450696,
+      "exact_sum_rel_err": 1.0294337264969853e-06
+    },
+    {
+      "context_id": "CID4_IN_022",
+      "family": "instruction_priority",
+      "z20_dark_norm": 0.721489595866651,
+      "z20_comp_norm": 1.0234201526137217,
+      "z24_from_dark_norm": 1.5689354600325465,
+      "z24_from_comp_norm": 1.7984391329122253,
+      "g_dot_z24_from_dark": 0.060155436532395065,
+      "g_dot_z24_from_comp": -0.008710801992193831,
+      "g_dot_z24_total": 0.05144460204748593,
+      "exact_sum_rel_err": 8.657560519709865e-07
+    },
+    {
+      "context_id": "CID4_IN_020",
+      "family": "instruction_priority",
+      "z20_dark_norm": 0.6640482160272229,
+      "z20_comp_norm": 1.0280517510992349,
+      "z24_from_dark_norm": 1.3724048735314882,
+      "z24_from_comp_norm": 1.5793576099468534,
+      "g_dot_z24_from_dark": 0.06444838570175249,
+      "g_dot_z24_from_comp": -0.22220996850661315,
+      "g_dot_z24_total": -0.15776173293488274,
+      "exact_sum_rel_err": 1.1453030313552343e-06
+    },
+    {
+      "context_id": "CID4_IN_006",
+      "family": "instruction_priority",
+      "z20_dark_norm": 0.60236853843745,
+      "z20_comp_norm": 1.054669826760208,
+      "z24_from_dark_norm": 1.1848825825776113,
+      "z24_from_comp_norm": 1.8482670216622568,
+      "g_dot_z24_from_dark": -0.0052667082803114565,
+      "g_dot_z24_from_comp": -0.08751394848419282,
+      "g_dot_z24_total": -0.0927806276165381,
+      "exact_sum_rel_err": 1.0673751965060486e-06
+    }
+  ],
+  "diag2_mean_z24_norm": {
+    "dark4": 2.70671750273373,
+    "bright4": 2.2360730999790186,
+    "rand4": 2.2046289159107832
+  },
+  "diag2_mean_abs_g_dot_z24": {
+    "dark4": 0.10721776338651826,
+    "bright4": 0.09619286618346236,
+    "rand4": 0.08833436469745373
+  },
+  "diag2_per_context": [
+    {
+      "context_id": "CID4_ST_009",
+      "family": "state_tracking",
+      "dark4_mean_z24_norm": 3.192568857058676,
+      "bright4_mean_z24_norm": 2.3398373245135975,
+      "rand4_mean_z24_norm": 2.299892633268558,
+      "dark4_mean_abs_g_dot_z24": 0.11487634550202694,
+      "bright4_mean_abs_g_dot_z24": 0.09990953489619485,
+      "rand4_mean_abs_g_dot_z24": 0.07130072844802089
+    },
+    {
+      "context_id": "CID4_ST_015",
+      "family": "state_tracking",
+      "dark4_mean_z24_norm": 3.5327276502741647,
+      "bright4_mean_z24_norm": 2.5557673220464263,
+      "rand4_mean_z24_norm": 2.7644706250409268,
+      "dark4_mean_abs_g_dot_z24": 0.08118909150437305,
+      "bright4_mean_abs_g_dot_z24": 0.07153901288396572,
+      "rand4_mean_abs_g_dot_z24": 0.11360902085478579
+    },
+    {
+      "context_id": "CID4_ST_020",
+      "family": "state_tracking",
+      "dark4_mean_z24_norm": 2.6187248967002965,
+      "bright4_mean_z24_norm": 2.1784903685450523,
+      "rand4_mean_z24_norm": 2.058012622065562,
+      "dark4_mean_abs_g_dot_z24": 0.11262403080895327,
+      "bright4_mean_abs_g_dot_z24": 0.13990165945041605,
+      "rand4_mean_abs_g_dot_z24": 0.043664276791018336
+    },
+    {
+      "context_id": "CID4_ST_016",
+      "family": "state_tracking",
+      "dark4_mean_z24_norm": 2.5581931485430194,
+      "bright4_mean_z24_norm": 2.115572191517202,
+      "rand4_mean_z24_norm": 2.014122341099703,
+      "dark4_mean_abs_g_dot_z24": 0.20433401200110338,
+      "bright4_mean_abs_g_dot_z24": 0.20485408352269607,
+      "rand4_mean_abs_g_dot_z24": 0.1868672725116553
+    },
+    {
+      "context_id": "CID4_AT_012",
+      "family": "attribute_binding",
+      "dark4_mean_z24_norm": 2.6438169332498687,
+      "bright4_mean_z24_norm": 2.2174008150994595,
+      "rand4_mean_z24_norm": 2.114675603019409,
+      "dark4_mean_abs_g_dot_z24": 0.14635737994779796,
+      "bright4_mean_abs_g_dot_z24": 0.08844392213455514,
+      "rand4_mean_abs_g_dot_z24": 0.0640207381745338
+    },
+    {
+      "context_id": "CID4_AT_013",
+      "family": "attribute_binding",
+      "dark4_mean_z24_norm": 2.7096930629607496,
+      "bright4_mean_z24_norm": 2.3476663688150774,
+      "rand4_mean_z24_norm": 2.6449889967396087,
+      "dark4_mean_abs_g_dot_z24": 0.0841226327438605,
+      "bright4_mean_abs_g_dot_z24": 0.07748670379936297,
+      "rand4_mean_abs_g_dot_z24": 0.04492355819417592
+    },
+    {
+      "context_id": "CID4_AT_024",
+      "family": "attribute_binding",
+      "dark4_mean_z24_norm": 2.66546069005674,
+      "bright4_mean_z24_norm": 2.2244114013919476,
+      "rand4_mean_z24_norm": 2.3071208430358556,
+      "dark4_mean_abs_g_dot_z24": 0.06691800746435306,
+      "bright4_mean_abs_g_dot_z24": 0.05958067891653163,
+      "rand4_mean_abs_g_dot_z24": 0.11896334125338566
+    },
+    {
+      "context_id": "CID4_AT_022",
+      "family": "attribute_binding",
+      "dark4_mean_z24_norm": 2.59817504478984,
+      "bright4_mean_z24_norm": 2.15101956420107,
+      "rand4_mean_z24_norm": 2.0547066748070018,
+      "dark4_mean_abs_g_dot_z24": 0.11582466278315806,
+      "bright4_mean_abs_g_dot_z24": 0.12348391511601697,
+      "rand4_mean_abs_g_dot_z24": 0.08186600924182408
+    },
+    {
+      "context_id": "CID4_SI_011",
+      "family": "simple_arithmetic",
+      "dark4_mean_z24_norm": 2.8252049541099686,
+      "bright4_mean_z24_norm": 2.3603585362928685,
+      "rand4_mean_z24_norm": 2.1763642578943525,
+      "dark4_mean_abs_g_dot_z24": 0.09979685017057047,
+      "bright4_mean_abs_g_dot_z24": 0.08713009509737728,
+      "rand4_mean_abs_g_dot_z24": 0.13160594491133354
+    },
+    {
+      "context_id": "CID4_SI_005",
+      "family": "simple_arithmetic",
+      "dark4_mean_z24_norm": 2.733372184589152,
+      "bright4_mean_z24_norm": 2.3125559535477667,
+      "rand4_mean_z24_norm": 2.4792798036971013,
+      "dark4_mean_abs_g_dot_z24": 0.18478116657094557,
+      "bright4_mean_abs_g_dot_z24": 0.10209286458519798,
+      "rand4_mean_abs_g_dot_z24": 0.13483983707920877
+    },
+    {
+      "context_id": "CID4_SI_001",
+      "family": "simple_arithmetic",
+      "dark4_mean_z24_norm": 2.793005817480575,
+      "bright4_mean_z24_norm": 2.394793554180952,
+      "rand4_mean_z24_norm": 2.3297218455909787,
+      "dark4_mean_abs_g_dot_z24": 0.06365350880646344,
+      "bright4_mean_abs_g_dot_z24": 0.07650504192634336,
+      "rand4_mean_abs_g_dot_z24": 0.044820484875745664
+    },
+    {
+      "context_id": "CID4_SI_006",
+      "family": "simple_arithmetic",
+      "dark4_mean_z24_norm": 2.5388415442332417,
+      "bright4_mean_z24_norm": 2.295602790842013,
+      "rand4_mean_z24_norm": 2.09453229999595,
+      "dark4_mean_abs_g_dot_z24": 0.08010027665885866,
+      "bright4_mean_abs_g_dot_z24": 0.0731995386696241,
+      "rand4_mean_abs_g_dot_z24": 0.05262068455729591
+    },
+    {
+      "context_id": "CID4_IN_002",
+      "family": "instruction_priority",
+      "dark4_mean_z24_norm": 2.7474330475079403,
+      "bright4_mean_z24_norm": 1.9944152990399462,
+      "rand4_mean_z24_norm": 2.0445760520736243,
+      "dark4_mean_abs_g_dot_z24": 0.11893461668329829,
+      "bright4_mean_abs_g_dot_z24": 0.06288864925150889,
+      "rand4_mean_abs_g_dot_z24": 0.10347122510384488
+    },
+    {
+      "context_id": "CID4_IN_022",
+      "family": "instruction_priority",
+      "dark4_mean_z24_norm": 2.3910877951921874,
+      "bright4_mean_z24_norm": 2.006782001540812,
+      "rand4_mean_z24_norm": 1.9396040636411942,
+      "dark4_mean_abs_g_dot_z24": 0.09321547240464916,
+      "bright4_mean_abs_g_dot_z24": 0.07115283791972082,
+      "rand4_mean_abs_g_dot_z24": 0.09518101465283205
+    },
+    {
+      "context_id": "CID4_IN_020",
+      "family": "instruction_priority",
+      "dark4_mean_z24_norm": 2.285663816553713,
+      "bright4_mean_z24_norm": 2.2987331218577847,
+      "rand4_mean_z24_norm": 2.1064222031356556,
+      "dark4_mean_abs_g_dot_z24": 0.11607021356935526,
+      "bright4_mean_abs_g_dot_z24": 0.10434405376750534,
+      "rand4_mean_abs_g_dot_z24": 0.07636933359717113
+    },
+    {
+      "context_id": "CID4_IN_006",
+      "family": "instruction_priority",
+      "dark4_mean_z24_norm": 2.473510600439547,
+      "bright4_mean_z24_norm": 1.9837629862323196,
+      "rand4_mean_z24_norm": 1.8455717894670487,
+      "dark4_mean_abs_g_dot_z24": 0.032685946564525246,
+      "bright4_mean_abs_g_dot_z24": 0.0965732669983806,
+      "rand4_mean_abs_g_dot_z24": 0.04922636491242823
+    }
+  ]
+}

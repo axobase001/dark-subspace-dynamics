@@ -1,0 +1,61 @@
+=== BAYES-DYN-04 REMOTE LIFECYCLE & STOP RECEIPT ===
+
+--- PRE-RUN (2026-11-20T05:36:44.282340+00:00) ---
+[colab] A new version of Colab CLI is available: 0.8.0 (current: 0.7.4)
+[colab] Run 'colab update' to update.
+[colab] To silence this check, set "enable_update_check": false in ~/.config/colab-cli/settings.json
+
+Current balance: 110.36 compute units
+Usage rate: 0.00/hr
+Active assignments: 0
+[colab] A new version of Colab CLI is available: 0.8.0 (current: 0.7.4)
+[colab] Run 'colab update' to update.
+[colab] To silence this check, set "enable_update_check": false in ~/.config/colab-cli/settings.json
+
+[colab] No active sessions.
+
+--- SESSION CREATED (2026-11-20T05:36:57.852456+00:00) ---
+[bayes-dyn-04] gpu-l4-s-ass1b0-9gqpe7fhwicv | Hardware: L4 | Shape: Standard | Variant: GPU | Status: IDLE
+Hard deadline=55.7 min
+[colab] A new version of Colab CLI is available: 0.8.0 (current: 0.7.4)
+[colab] Run 'colab update' to update.
+[colab] To silence this check, set "enable_update_check": false in ~/.config/colab-cli/settings.json
+
+Current balance: 110.36 compute units
+Usage rate: 1.94/hr
+Active assignments: 1
+
+--- REMOTE STOP (2026-11-20T05:42:11.374718+00:00 -> 2026-11-20T05:42:15.357307+00:00) ---
+Reason: NORMAL_COMPLETED
+rc=0
+[colab] A new version of Colab CLI is available: 0.8.0 (current: 0.7.4)
+[colab] Run 'colab update' to update.
+[colab] To silence this check, set "enable_update_check": false in ~/.config/colab-cli/settings.json
+
+[colab] Stopping session 'bayes-dyn-04'...
+[colab] Session terminated.
+
+
+--- POST-STOP STATUS ---
+[colab] A new version of Colab CLI is available: 0.8.0 (current: 0.7.4)
+[colab] Run 'colab update' to update.
+[colab] To silence this check, set "enable_update_check": false in ~/.config/colab-cli/settings.json
+
+[colab] No active sessions.
+
+--- POST-STOP USAGE ---
+[colab] A new version of Colab CLI is available: 0.8.0 (current: 0.7.4)
+[colab] Run 'colab update' to update.
+[colab] To silence this check, set "enable_update_check": false in ~/.config/colab-cli/settings.json
+
+Current balance: 110.36 compute units
+Usage rate: 0.00/hr
+Active assignments: 0
+
+
+--- POST-SETTLE USAGE CHECK (2026-11-20T05:45:19+00:00) ---
+[colab] No active sessions.
+Current balance: 110.20 compute units
+Usage rate: 0.00/hr
+Active assignments: 0
+Settled delta for completed run: 0.16 CU (110.36 -> 110.20); cumulative across all session attempts: 0.32 CU (110.52 -> 110.20).

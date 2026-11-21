@@ -1,0 +1,21 @@
+{
+  "experiment_id": "BAYES-DYN-05",
+  "model_key": "phi35_mini",
+  "label": "Phi-3.5-mini-instruct",
+  "gpu_requested": "L4",
+  "high_mem": false,
+  "session_name": "bayes-dyn-05-phi35-mini",
+  "session_id_line": "[bayes-dyn-05-phi35-mini] gpu-l4-s-ass1a0-2mo5jrucdlmpf | Hardware: L4 | Shape: Standard | Variant: GPU | Status: IDLE",
+  "stop_reason": "NORMAL_COMPLETED",
+  "final_heartbeat_status": "COMPLETED",
+  "stop_requested_utc": "2026-11-20T07:49:38.678011+00:00",
+  "stop_confirmed_utc": "2026-11-20T07:49:43.293122+00:00",
+  "remote_stop_confirmed": true,
+  "wall_clock_sec": 1100.62,
+  "reported_rate_per_hr": 1.94,
+  "estimated_cu_from_wall": 0.5931,
+  "colab_cu_before": 109.84,
+  "colab_cu_after": 109.33,
+  "colab_cu_delta_immediate": 0.51,
+  "post_stop_active_assignments_account": 0
+}

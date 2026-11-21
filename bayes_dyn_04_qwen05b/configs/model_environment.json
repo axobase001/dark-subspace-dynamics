@@ -1,0 +1,27 @@
+{
+  "experiment_id": "BAYES-DYN-04",
+  "timestamp_utc": "2026-11-20T05:37:51.110327+00:00",
+  "model_id": "Qwen/Qwen2.5-0.5B-Instruct",
+  "model_revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+  "full_all_params_weight_sha256": "376624fadb288209da20a4e6bff39f6b7d036a3e8b56616f517b0db5908fcc11",
+  "dtype": "torch.float32",
+  "attn_implementation": "eager",
+  "allow_tf32": false,
+  "hidden_size": 896,
+  "n_dark": 38,
+  "source_layer": 16,
+  "mid_layer": 20,
+  "target_layer": 24,
+  "v_dark_prior_vs_live_max_diff": 0.0,
+  "gpu_name": "NVIDIA L4",
+  "gpu_total_vram_gb": 22.03,
+  "torch_version": "2.14.1+cu130",
+  "cuda_version": "13.0",
+  "python_version": "3.13.16",
+  "option_token_ids": {
+    "A": 32,
+    "B": 33,
+    "C": 34,
+    "D": 35
+  }
+}

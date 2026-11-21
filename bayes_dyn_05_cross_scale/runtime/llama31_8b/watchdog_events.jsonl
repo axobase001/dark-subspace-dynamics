@@ -1,0 +1,63 @@
+{"utc": "2026-11-20T10:06:14.984349+00:00", "event": "session_created", "session_line": "[bayes-dyn-05-llama31-8b] gpu-l4-s-ass1a0-2qjgqczkaymwd | Hardware: L4 | Shape: Standard | Variant: GPU | Status: IDLE", "driver": "run_bayes_dyn_05_7b_stream.py", "rate_hr": 1.94, "eff_cu_cap": 5.5, "hard_deadline_min": 65.0}
+{"utc": "2026-11-20T10:06:25.767600+00:00", "event": "detached_launch_ok", "out": "[colab] A new version of Colab CLI is available: 0.8.0 (current: 0.7.4)\n[colab] Run 'colab update' to update.\n[colab] To silence this check, set \"enable_update_check\": false in ~/.config/colab-cli/settings.json\n\nDETACHED_LAUNCH_OK model=llama31_8b driver=run_bayes_dyn_05_7b_stream.py pid=748"}
+{"utc": "2026-11-20T10:06:58.277546+00:00", "event": "heartbeat", "wall_min": 0.79, "phase": "LOAD_MODEL", "step": 0, "status": "RUNNING", "no_prog_s": 0.0}
+{"utc": "2026-11-20T10:07:30.457081+00:00", "event": "heartbeat", "wall_min": 1.33, "phase": "LOAD_MODEL", "step": 0, "status": "RUNNING", "no_prog_s": 32.5}
+{"utc": "2026-11-20T10:08:02.541182+00:00", "event": "heartbeat", "wall_min": 1.86, "phase": "SPECTRAL_SVD", "step": 0, "status": "RUNNING", "no_prog_s": 0.0}
+{"utc": "2026-11-20T10:09:35.545159+00:00", "event": "heartbeat", "wall_min": 3.4, "phase": "SPECTRAL_SVD", "step": 0, "status": "RUNNING", "no_prog_s": 92.1}
+{"utc": "2026-11-20T10:10:10.905954+00:00", "event": "heartbeat", "wall_min": 4.0, "phase": "SPECTRAL_SVD", "step": 0, "status": "RUNNING", "no_prog_s": 128.0}
+{"utc": "2026-11-20T10:10:44.412360+00:00", "event": "kernel_keepalive", "wall_min": 4.54, "rc": 0, "ok": true}
+{"utc": "2026-11-20T10:10:47.431093+00:00", "event": "heartbeat", "wall_min": 4.54, "phase": "SPECTRAL_SVD", "step": 0, "status": "RUNNING", "no_prog_s": 160.4}
+{"utc": "2026-11-20T10:11:19.458484+00:00", "event": "heartbeat", "wall_min": 5.15, "phase": "P0_CPU_REF", "step": 0, "status": "RUNNING", "no_prog_s": 0.0}
+{"utc": "2026-11-20T10:11:51.724951+00:00", "event": "heartbeat", "wall_min": 5.68, "phase": "P0_CHECKS", "step": 0, "status": "RUNNING", "no_prog_s": 0.0}
+{"utc": "2026-11-20T10:12:23.575446+00:00", "event": "heartbeat", "wall_min": 6.22, "phase": "DEV_FIT96", "step": 0, "status": "RUNNING", "no_prog_s": 0.0}
+{"utc": "2026-11-20T10:12:55.632347+00:00", "event": "heartbeat", "wall_min": 6.75, "phase": "DEV_FIT96", "step": 0, "status": "RUNNING", "no_prog_s": 31.9}
+{"utc": "2026-11-20T10:13:29.662548+00:00", "event": "heartbeat", "wall_min": 7.32, "phase": "DEV_FIT96", "step": 0, "status": "RUNNING", "no_prog_s": 65.9}
+{"utc": "2026-11-20T10:14:03.178625+00:00", "event": "heartbeat", "wall_min": 7.85, "phase": "DEV_FIT96", "step": 8, "status": "RUNNING", "no_prog_s": 0.0}
+{"utc": "2026-11-20T10:14:36.232959+00:00", "event": "heartbeat", "wall_min": 8.41, "phase": "DEV_FIT96", "step": 16, "status": "RUNNING", "no_prog_s": 0.0}
+{"utc": "2026-11-20T10:15:09.102020+00:00", "event": "kernel_keepalive", "wall_min": 8.96, "rc": 0, "ok": true}
+{"utc": "2026-11-20T10:15:11.217196+00:00", "event": "heartbeat", "wall_min": 8.96, "phase": "DEV_FIT96", "step": 24, "status": "RUNNING", "no_prog_s": 0.0}
+{"utc": "2026-11-20T10:15:55.057568+00:00", "event": "heartbeat", "wall_min": 9.54, "phase": "DEV_FIT96", "step": 24, "status": "RUNNING", "no_prog_s": 35.0}
+{"utc": "2026-11-20T10:16:27.168606+00:00", "event": "heartbeat", "wall_min": 10.27, "phase": "DEV_FIT96", "step": 32, "status": "RUNNING", "no_prog_s": 0.0}
+{"utc": "2026-11-20T10:17:02.867696+00:00", "event": "heartbeat", "wall_min": 10.87, "phase": "DEV_FIT96", "step": 40, "status": "RUNNING", "no_prog_s": 0.0}
+{"utc": "2026-11-20T10:17:35.819280+00:00", "event": "heartbeat", "wall_min": 11.4, "phase": "DEV_FIT96", "step": 48, "status": "RUNNING", "no_prog_s": 0.0}
+{"utc": "2026-11-20T10:18:07.881487+00:00", "event": "heartbeat", "wall_min": 11.95, "phase": "DEV_FIT96", "step": 48, "status": "RUNNING", "no_prog_s": 33.0}
+{"utc": "2026-11-20T10:18:40.722741+00:00", "event": "heartbeat", "wall_min": 12.49, "phase": "DEV_FIT96", "step": 56, "status": "RUNNING", "no_prog_s": 0.0}
+{"utc": "2026-11-20T10:19:12.834373+00:00", "event": "kernel_keepalive", "wall_min": 13.04, "rc": 0, "ok": true}
+{"utc": "2026-11-20T10:19:15.067439+00:00", "event": "heartbeat", "wall_min": 13.04, "phase": "DEV_FIT96", "step": 64, "status": "RUNNING", "no_prog_s": 0.0}
+{"utc": "2026-11-20T10:20:00.226925+00:00", "event": "heartbeat", "wall_min": 13.61, "phase": "DEV_FIT96", "step": 64, "status": "RUNNING", "no_prog_s": 34.3}
+{"utc": "2026-11-20T10:20:38.057729+00:00", "event": "heartbeat", "wall_min": 14.43, "phase": "DEV_FIT96", "step": 72, "status": "RUNNING", "no_prog_s": 0.0}
+{"utc": "2026-11-20T10:21:10.732876+00:00", "event": "heartbeat", "wall_min": 14.99, "phase": "DEV_FIT96", "step": 80, "status": "RUNNING", "no_prog_s": 0.0}
+{"utc": "2026-11-20T10:21:43.285965+00:00", "event": "heartbeat", "wall_min": 15.54, "phase": "DEV_FIT96", "step": 88, "status": "RUNNING", "no_prog_s": 0.0}
+{"utc": "2026-11-20T10:22:15.847792+00:00", "event": "heartbeat", "wall_min": 16.08, "phase": "DEV_FIT96", "step": 88, "status": "RUNNING", "no_prog_s": 32.6}
+{"utc": "2026-11-20T10:22:48.153778+00:00", "event": "heartbeat", "wall_min": 16.62, "phase": "DEV_TUNE16", "step": 0, "status": "RUNNING", "no_prog_s": 0.0}
+{"utc": "2026-11-20T10:23:56.902190+00:00", "event": "kernel_keepalive", "wall_min": 17.22, "rc": -1, "ok": false}
+{"utc": "2026-11-20T10:23:59.339605+00:00", "event": "heartbeat", "wall_min": 17.22, "phase": "DEV_TUNE16", "step": 8, "status": "RUNNING", "no_prog_s": 0.0}
+{"utc": "2026-11-20T10:25:31.845598+00:00", "event": "heartbeat", "wall_min": 19.35, "phase": "FIT_PRIOR", "step": 0, "status": "RUNNING", "no_prog_s": 0.0}
+{"utc": "2026-11-20T10:26:04.064695+00:00", "event": "heartbeat", "wall_min": 19.89, "phase": "DEV_PILOT", "step": 0, "status": "RUNNING", "no_prog_s": 0.0}
+{"utc": "2026-11-20T10:26:38.683819+00:00", "event": "heartbeat", "wall_min": 20.47, "phase": "CAL_24", "step": 0, "status": "RUNNING", "no_prog_s": 0.0}
+{"utc": "2026-11-20T10:27:11.462527+00:00", "event": "heartbeat", "wall_min": 21.0, "phase": "CAL_24", "step": 8, "status": "RUNNING", "no_prog_s": 0.0}
+{"utc": "2026-11-20T10:28:16.482898+00:00", "event": "kernel_keepalive", "wall_min": 21.55, "rc": -1, "ok": false}
+{"utc": "2026-11-20T10:28:31.023583+00:00", "event": "heartbeat", "wall_min": 21.55, "phase": "CONFIRM_CONFIRM_ID", "step": 0, "status": "RUNNING", "no_prog_s": 0.0}
+{"utc": "2026-11-20T10:29:03.460591+00:00", "event": "heartbeat", "wall_min": 22.87, "phase": "CONFIRM_CONFIRM_ID", "step": 0, "status": "RUNNING", "no_prog_s": 79.6}
+{"utc": "2026-11-20T10:29:35.416186+00:00", "event": "heartbeat", "wall_min": 23.41, "phase": "CONFIRM_CONFIRM_ID", "step": 8, "status": "RUNNING", "no_prog_s": 0.0}
+{"utc": "2026-11-20T10:30:10.862973+00:00", "event": "heartbeat", "wall_min": 24.0, "phase": "CONFIRM_CONFIRM_ID", "step": 16, "status": "RUNNING", "no_prog_s": 0.0}
+{"utc": "2026-11-20T10:30:43.075604+00:00", "event": "heartbeat", "wall_min": 24.54, "phase": "CONFIRM_CONFIRM_ID", "step": 16, "status": "RUNNING", "no_prog_s": 32.4}
+{"utc": "2026-11-20T10:31:15.293717+00:00", "event": "heartbeat", "wall_min": 25.07, "phase": "CONFIRM_CONFIRM_ID", "step": 24, "status": "RUNNING", "no_prog_s": 0.0}
+{"utc": "2026-11-20T10:31:47.692149+00:00", "event": "kernel_keepalive", "wall_min": 25.61, "rc": 0, "ok": true}
+{"utc": "2026-11-20T10:31:50.038001+00:00", "event": "heartbeat", "wall_min": 25.61, "phase": "CONFIRM_CONFIRM_ID", "step": 24, "status": "RUNNING", "no_prog_s": 32.2}
+{"utc": "2026-11-20T10:33:22.679450+00:00", "event": "heartbeat", "wall_min": 27.19, "phase": "CONFIRM_CONFIRM_ID", "step": 40, "status": "RUNNING", "no_prog_s": 0.0}
+{"utc": "2026-11-20T10:33:57.775934+00:00", "event": "heartbeat", "wall_min": 27.78, "phase": "CONFIRM_CONFIRM_ID", "step": 48, "status": "RUNNING", "no_prog_s": 0.0}
+{"utc": "2026-11-20T10:34:29.753684+00:00", "event": "heartbeat", "wall_min": 28.32, "phase": "CONFIRM_CONFIRM_ID", "step": 56, "status": "RUNNING", "no_prog_s": 0.0}
+{"utc": "2026-11-20T10:35:02.020696+00:00", "event": "heartbeat", "wall_min": 28.85, "phase": "CONFIRM_CONFIRM_ID", "step": 56, "status": "RUNNING", "no_prog_s": 32.0}
+{"utc": "2026-11-20T10:35:33.742311+00:00", "event": "heartbeat", "wall_min": 29.39, "phase": "CONFIRM_CONFIRM_OOD", "step": 0, "status": "RUNNING", "no_prog_s": 0.0}
+{"utc": "2026-11-20T10:36:38.772663+00:00", "event": "kernel_keepalive", "wall_min": 29.92, "rc": -1, "ok": false}
+{"utc": "2026-11-20T10:36:41.399457+00:00", "event": "heartbeat", "wall_min": 29.92, "phase": "CONFIRM_CONFIRM_OOD", "step": 0, "status": "RUNNING", "no_prog_s": 31.7}
+{"utc": "2026-11-20T10:37:13.162392+00:00", "event": "heartbeat", "wall_min": 31.05, "phase": "CONFIRM_CONFIRM_OOD", "step": 8, "status": "RUNNING", "no_prog_s": 0.0}
+{"utc": "2026-11-20T10:37:48.460402+00:00", "event": "heartbeat", "wall_min": 31.63, "phase": "CONFIRM_CONFIRM_OOD", "step": 8, "status": "RUNNING", "no_prog_s": 35.0}
+{"utc": "2026-11-20T10:38:20.968094+00:00", "event": "heartbeat", "wall_min": 32.16, "phase": "CONFIRM_CONFIRM_OOD", "step": 16, "status": "RUNNING", "no_prog_s": 0.0}
+{"utc": "2026-11-20T10:38:53.099049+00:00", "event": "heartbeat", "wall_min": 32.71, "phase": "CONFIRM_CONFIRM_OOD", "step": 16, "status": "RUNNING", "no_prog_s": 32.5}
+{"utc": "2026-11-20T10:39:24.871369+00:00", "event": "heartbeat", "wall_min": 33.24, "phase": "CONFIRM_CONFIRM_OOD", "step": 24, "status": "RUNNING", "no_prog_s": 0.0}
+{"utc": "2026-11-20T10:39:56.723256+00:00", "event": "heartbeat", "wall_min": 33.77, "phase": "CONFIRM_CONFIRM_OOD", "step": 24, "status": "RUNNING", "no_prog_s": 31.8}
+{"utc": "2026-11-20T10:41:01.748404+00:00", "event": "kernel_keepalive", "wall_min": 34.3, "rc": -1, "ok": false}
+{"utc": "2026-11-20T10:41:03.367441+00:00", "event": "heartbeat", "wall_min": 34.3, "phase": "TRAJECTORY_12", "step": 8, "status": "RUNNING", "no_prog_s": 0.0}
+{"utc": "2026-11-20T10:41:38.916781+00:00", "event": "heartbeat", "wall_min": 35.46, "phase": "DONE", "step": 1, "status": "COMPLETED", "no_prog_s": 0.0}

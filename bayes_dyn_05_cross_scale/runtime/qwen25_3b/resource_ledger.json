@@ -1,0 +1,21 @@
+{
+  "experiment_id": "BAYES-DYN-05",
+  "model_key": "qwen25_3b",
+  "label": "Qwen2.5-3B-Instruct",
+  "gpu_requested": "L4",
+  "high_mem": false,
+  "session_name": "bayes-dyn-05-qwen25-3b",
+  "session_id_line": "[bayes-dyn-05-qwen25-3b] gpu-l4-s-ass1a0-fieogln7rf1n | Hardware: L4 | Shape: Standard | Variant: GPU | Status: IDLE",
+  "stop_reason": "NORMAL_COMPLETED",
+  "final_heartbeat_status": "COMPLETED",
+  "stop_requested_utc": "2026-11-20T07:30:26.512305+00:00",
+  "stop_confirmed_utc": "2026-11-20T07:30:30.402080+00:00",
+  "remote_stop_confirmed": true,
+  "wall_clock_sec": 858.42,
+  "reported_rate_per_hr": 1.94,
+  "estimated_cu_from_wall": 0.4626,
+  "colab_cu_before": 110.2,
+  "colab_cu_after": 109.84,
+  "colab_cu_delta_immediate": 0.36,
+  "post_stop_active_assignments_account": 0
+}

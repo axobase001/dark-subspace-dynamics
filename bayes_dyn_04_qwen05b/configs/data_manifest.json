@@ -1,0 +1,930 @@
+{
+  "experiment_id": "BAYES-DYN-04",
+  "master_seed": 2026112004,
+  "derived_seeds": {
+    "data_generation": 2026112041,
+    "probe_bank_38x38": 2026112042,
+    "q_general_4": 2026112043,
+    "mispair_signed_perm": 2026112044,
+    "dev_oof_folds": 2026112045,
+    "dev_tune_banks": [
+      2026112046,
+      2026112047,
+      2026112048
+    ],
+    "bootstrap_stats": 2026112049,
+    "trajectory_panel_select": 2026112050,
+    "random_subspace_diag": 2026112051
+  },
+  "all_independent_text_verifier_passed": true,
+  "zero_exact_overlap_with_025_and_03": true,
+  "file_sha256": {
+    "data/dev_pilot.jsonl": "c196c407ca789894d65efff493e93ffd05afef7b8a03ecbfc25760b4268c84f4",
+    "data/cal.jsonl": "8df42ebb3ab9c1f45b3bcc1d41605c2ca735fa3760a189013870a3c8b9f9eb75",
+    "data/confirm_id.jsonl": "e0ccd0d54aeace979edbf3331c7675a7ae8852bbb618d3267639cda0915166b2",
+    "data/confirm_ood.jsonl": "5259ba77c8a02e624cc0837308973d1514e4b1fcfa16ac065d64f15369280f0e"
+  },
+  "split_stats": {
+    "dev_pilot": {
+      "count": 16,
+      "unique_groups": 16,
+      "template_groups": [
+        "v04_dev_pilot_attribute_binding_t0",
+        "v04_dev_pilot_attribute_binding_t1",
+        "v04_dev_pilot_instruction_priority_t0",
+        "v04_dev_pilot_simple_arithmetic_t0",
+        "v04_dev_pilot_simple_arithmetic_t1",
+        "v04_dev_pilot_state_tracking_t0",
+        "v04_dev_pilot_state_tracking_t1"
+      ],
+      "option_counts": {
+        "A": 4,
+        "B": 4,
+        "C": 4,
+        "D": 4
+      },
+      "word_count_min": 36,
+      "word_count_mean": 44.38,
+      "word_count_max": 54,
+      "all_text_verified": true
+    },
+    "cal": {
+      "count": 32,
+      "unique_groups": 32,
+      "template_groups": [
+        "v04_cal_attribute_binding_t0",
+        "v04_cal_attribute_binding_t1",
+        "v04_cal_instruction_priority_t0",
+        "v04_cal_instruction_priority_t1",
+        "v04_cal_simple_arithmetic_t0",
+        "v04_cal_simple_arithmetic_t1",
+        "v04_cal_state_tracking_t1"
+      ],
+      "option_counts": {
+        "A": 8,
+        "B": 8,
+        "C": 8,
+        "D": 8
+      },
+      "word_count_min": 36,
+      "word_count_mean": 45.06,
+      "word_count_max": 53,
+      "all_text_verified": true
+    },
+    "confirm_id": {
+      "count": 96,
+      "unique_groups": 96,
+      "template_groups": [
+        "v04_confirm_id_attribute_binding_t0",
+        "v04_confirm_id_attribute_binding_t1",
+        "v04_confirm_id_instruction_priority_t0",
+        "v04_confirm_id_instruction_priority_t1",
+        "v04_confirm_id_simple_arithmetic_t0",
+        "v04_confirm_id_simple_arithmetic_t1",
+        "v04_confirm_id_state_tracking_t0",
+        "v04_confirm_id_state_tracking_t1"
+      ],
+      "option_counts": {
+        "A": 24,
+        "B": 24,
+        "C": 24,
+        "D": 24
+      },
+      "word_count_min": 36,
+      "word_count_mean": 44.82,
+      "word_count_max": 54,
+      "all_text_verified": true
+    },
+    "confirm_ood": {
+      "count": 32,
+      "unique_groups": 32,
+      "template_groups": [
+        "v04_confirm_ood_t0",
+        "v04_confirm_ood_t1"
+      ],
+      "option_counts": {
+        "A": 8,
+        "B": 8,
+        "C": 8,
+        "D": 8
+      },
+      "word_count_min": 61,
+      "word_count_mean": 61.0,
+      "word_count_max": 61,
+      "all_text_verified": true,
+      "template_x_branch_balance": {
+        "v04_confirm_ood_t0|low": 8,
+        "v04_confirm_ood_t1|low": 8,
+        "v04_confirm_ood_t0|high": 8,
+        "v04_confirm_ood_t1|high": 8
+      }
+    }
+  },
+  "pre_registered_trajectory_panel_16": [
+    "CID4_ST_009",
+    "CID4_ST_015",
+    "CID4_ST_020",
+    "CID4_ST_016",
+    "CID4_AT_012",
+    "CID4_AT_013",
+    "CID4_AT_024",
+    "CID4_AT_022",
+    "CID4_SI_011",
+    "CID4_SI_005",
+    "CID4_SI_001",
+    "CID4_SI_006",
+    "CID4_IN_002",
+    "CID4_IN_022",
+    "CID4_IN_020",
+    "CID4_IN_006"
+  ],
+  "S_mispair_8x8": [
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      -1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      -1.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      -1.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      -1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  ],
+  "S_mispair_sha256": "aa9a1dbbe3067cb4",
+  "probe_bank_hashes": {
+    "DP4_ST_001": {
+      "B_38x38_f64_sha256": "013cbf1bcc65816c",
+      "Q_gen_38x4_f64_sha256": "78e161a851cf452d"
+    },
+    "DP4_ST_002": {
+      "B_38x38_f64_sha256": "a8e443524502809b",
+      "Q_gen_38x4_f64_sha256": "1cc3bdcf2ac14a82"
+    },
+    "DP4_ST_003": {
+      "B_38x38_f64_sha256": "0371e8283302c5af",
+      "Q_gen_38x4_f64_sha256": "6f44a94ff9a03137"
+    },
+    "DP4_ST_004": {
+      "B_38x38_f64_sha256": "349f06b7fc638ab3",
+      "Q_gen_38x4_f64_sha256": "babbad9f8d11ae7c"
+    },
+    "DP4_AT_001": {
+      "B_38x38_f64_sha256": "75f6f5ff4ddecf1e",
+      "Q_gen_38x4_f64_sha256": "ddfb5c7b280f46b9"
+    },
+    "DP4_AT_002": {
+      "B_38x38_f64_sha256": "f957501db254f524",
+      "Q_gen_38x4_f64_sha256": "2499c6a5efa1a47f"
+    },
+    "DP4_AT_003": {
+      "B_38x38_f64_sha256": "f91b1b6debce641c",
+      "Q_gen_38x4_f64_sha256": "284e42d685740e4e"
+    },
+    "DP4_AT_004": {
+      "B_38x38_f64_sha256": "701e4f332b2c5b47",
+      "Q_gen_38x4_f64_sha256": "19b30c7322f6f66e"
+    },
+    "DP4_SI_001": {
+      "B_38x38_f64_sha256": "da08a59a6f8f5cc6",
+      "Q_gen_38x4_f64_sha256": "77d3517085ba41a2"
+    },
+    "DP4_SI_002": {
+      "B_38x38_f64_sha256": "37cfe12c3572a84f",
+      "Q_gen_38x4_f64_sha256": "c9d2659166e1df9e"
+    },
+    "DP4_SI_003": {
+      "B_38x38_f64_sha256": "903f10c867a40cd9",
+      "Q_gen_38x4_f64_sha256": "481c3c4bca08ca6e"
+    },
+    "DP4_SI_004": {
+      "B_38x38_f64_sha256": "b578b4d60d31b50f",
+      "Q_gen_38x4_f64_sha256": "627ad6bdf89000e6"
+    },
+    "DP4_IN_001": {
+      "B_38x38_f64_sha256": "af79e2cef499c152",
+      "Q_gen_38x4_f64_sha256": "a22a44b8fd93c816"
+    },
+    "DP4_IN_002": {
+      "B_38x38_f64_sha256": "b579ead78b2c8958",
+      "Q_gen_38x4_f64_sha256": "662e69d9c6484a4c"
+    },
+    "DP4_IN_003": {
+      "B_38x38_f64_sha256": "da4642942e24687c",
+      "Q_gen_38x4_f64_sha256": "5724cbdcf92d9fed"
+    },
+    "DP4_IN_004": {
+      "B_38x38_f64_sha256": "675009e8cbfa6b1b",
+      "Q_gen_38x4_f64_sha256": "f85e44617490ee90"
+    },
+    "CAL4_ST_001": {
+      "B_38x38_f64_sha256": "bfc6732379ebe086",
+      "Q_gen_38x4_f64_sha256": "60d68f4a52bd001b"
+    },
+    "CAL4_ST_002": {
+      "B_38x38_f64_sha256": "f54fb460933516be",
+      "Q_gen_38x4_f64_sha256": "73a24921cee6239a"
+    },
+    "CAL4_ST_003": {
+      "B_38x38_f64_sha256": "db5ad0977c3e75d9",
+      "Q_gen_38x4_f64_sha256": "9c5e14cbe5acad23"
+    },
+    "CAL4_ST_004": {
+      "B_38x38_f64_sha256": "be4705a5c04aa966",
+      "Q_gen_38x4_f64_sha256": "06f067429cb350ea"
+    },
+    "CAL4_ST_005": {
+      "B_38x38_f64_sha256": "ea260e184c9c1cd1",
+      "Q_gen_38x4_f64_sha256": "207d0c46baf66398"
+    },
+    "CAL4_ST_006": {
+      "B_38x38_f64_sha256": "24650c6886faa6c9",
+      "Q_gen_38x4_f64_sha256": "073d949a982ee06f"
+    },
+    "CAL4_ST_007": {
+      "B_38x38_f64_sha256": "8ce9546c6aa20520",
+      "Q_gen_38x4_f64_sha256": "9bcbbb17d2eff48d"
+    },
+    "CAL4_ST_008": {
+      "B_38x38_f64_sha256": "9b4c086f0fa6e6ea",
+      "Q_gen_38x4_f64_sha256": "ff0025d85c852d91"
+    },
+    "CAL4_AT_001": {
+      "B_38x38_f64_sha256": "b5cd5b262f9ecea0",
+      "Q_gen_38x4_f64_sha256": "277955bba29d4d21"
+    },
+    "CAL4_AT_002": {
+      "B_38x38_f64_sha256": "5c3799546f5a032c",
+      "Q_gen_38x4_f64_sha256": "f7975437a1f4b4ac"
+    },
+    "CAL4_AT_003": {
+      "B_38x38_f64_sha256": "c36ee308e33f672f",
+      "Q_gen_38x4_f64_sha256": "db8f20740d1598b1"
+    },
+    "CAL4_AT_004": {
+      "B_38x38_f64_sha256": "826541eb9e8d41da",
+      "Q_gen_38x4_f64_sha256": "42886bf9ec3aaeb7"
+    },
+    "CAL4_AT_005": {
+      "B_38x38_f64_sha256": "2ee91fcc0b3de16d",
+      "Q_gen_38x4_f64_sha256": "6af350c84f552fbd"
+    },
+    "CAL4_AT_006": {
+      "B_38x38_f64_sha256": "61924b8d4d6b17f3",
+      "Q_gen_38x4_f64_sha256": "1a9a37fe90bcefeb"
+    },
+    "CAL4_AT_007": {
+      "B_38x38_f64_sha256": "d01f3f587a9f8c05",
+      "Q_gen_38x4_f64_sha256": "02bab2870d6377ad"
+    },
+    "CAL4_AT_008": {
+      "B_38x38_f64_sha256": "bee078ee400748ca",
+      "Q_gen_38x4_f64_sha256": "416c0ddd92f8e367"
+    },
+    "CAL4_SI_001": {
+      "B_38x38_f64_sha256": "3e747220aa4f7865",
+      "Q_gen_38x4_f64_sha256": "e4a9b31e6eb5212e"
+    },
+    "CAL4_SI_002": {
+      "B_38x38_f64_sha256": "76c24d28e2962aa0",
+      "Q_gen_38x4_f64_sha256": "ef150e653f23004c"
+    },
+    "CAL4_SI_003": {
+      "B_38x38_f64_sha256": "369e79e4a8f9c98d",
+      "Q_gen_38x4_f64_sha256": "014d4388880fe3bf"
+    },
+    "CAL4_SI_004": {
+      "B_38x38_f64_sha256": "2e8eeb6796ca62fc",
+      "Q_gen_38x4_f64_sha256": "7c6d9a26f674edcd"
+    },
+    "CAL4_SI_005": {
+      "B_38x38_f64_sha256": "aa783c941952902c",
+      "Q_gen_38x4_f64_sha256": "62e45f893d44b7e3"
+    },
+    "CAL4_SI_006": {
+      "B_38x38_f64_sha256": "e28fdc4e1249b0c8",
+      "Q_gen_38x4_f64_sha256": "66396c38fde60040"
+    },
+    "CAL4_SI_007": {
+      "B_38x38_f64_sha256": "664e9517423c56be",
+      "Q_gen_38x4_f64_sha256": "6063e7b00e6ad202"
+    },
+    "CAL4_SI_008": {
+      "B_38x38_f64_sha256": "5b77286433f5f8eb",
+      "Q_gen_38x4_f64_sha256": "a86e8e22d5884fdd"
+    },
+    "CAL4_IN_001": {
+      "B_38x38_f64_sha256": "042ecb0a790c7cca",
+      "Q_gen_38x4_f64_sha256": "5cc527af51b8d81d"
+    },
+    "CAL4_IN_002": {
+      "B_38x38_f64_sha256": "efabd77188c18c7a",
+      "Q_gen_38x4_f64_sha256": "69bcf9532aef4537"
+    },
+    "CAL4_IN_003": {
+      "B_38x38_f64_sha256": "d9dbdc8df2a0d2ae",
+      "Q_gen_38x4_f64_sha256": "5435327f3bb8c32f"
+    },
+    "CAL4_IN_004": {
+      "B_38x38_f64_sha256": "df31c020d6ab1e69",
+      "Q_gen_38x4_f64_sha256": "88be69195c7f58d6"
+    },
+    "CAL4_IN_005": {
+      "B_38x38_f64_sha256": "42d3b402ecee9c9b",
+      "Q_gen_38x4_f64_sha256": "b33d9b2a9c562bf1"
+    },
+    "CAL4_IN_006": {
+      "B_38x38_f64_sha256": "f4143d27ede5eb89",
+      "Q_gen_38x4_f64_sha256": "1c7048393349ec88"
+    },
+    "CAL4_IN_007": {
+      "B_38x38_f64_sha256": "c10f882fc5c70d62",
+      "Q_gen_38x4_f64_sha256": "4183181b5f55572f"
+    },
+    "CAL4_IN_008": {
+      "B_38x38_f64_sha256": "a361d5ffd8cba16d",
+      "Q_gen_38x4_f64_sha256": "dddd086422c9e07d"
+    },
+    "CID4_ST_001": {
+      "B_38x38_f64_sha256": "477818a603437999",
+      "Q_gen_38x4_f64_sha256": "ad10ea38c96a139d"
+    },
+    "CID4_ST_002": {
+      "B_38x38_f64_sha256": "9a97b0ee179528fa",
+      "Q_gen_38x4_f64_sha256": "21b86bd2ac5da418"
+    },
+    "CID4_ST_003": {
+      "B_38x38_f64_sha256": "ecea0c25520bfb03",
+      "Q_gen_38x4_f64_sha256": "7562db1af70afb48"
+    },
+    "CID4_ST_004": {
+      "B_38x38_f64_sha256": "e39363f88b0f06d2",
+      "Q_gen_38x4_f64_sha256": "b90340b2e26d9c7e"
+    },
+    "CID4_ST_005": {
+      "B_38x38_f64_sha256": "b7c4070c39819f54",
+      "Q_gen_38x4_f64_sha256": "7c0cfb25b7ea972c"
+    },
+    "CID4_ST_006": {
+      "B_38x38_f64_sha256": "cb241726a5bafd6d",
+      "Q_gen_38x4_f64_sha256": "4c82da9e75a53e88"
+    },
+    "CID4_ST_007": {
+      "B_38x38_f64_sha256": "9f8dbbd686332a04",
+      "Q_gen_38x4_f64_sha256": "fce1791dad59da36"
+    },
+    "CID4_ST_008": {
+      "B_38x38_f64_sha256": "73a6cc21fd54becc",
+      "Q_gen_38x4_f64_sha256": "e2ef25bcaf1ce896"
+    },
+    "CID4_ST_009": {
+      "B_38x38_f64_sha256": "7bf0960b875f0722",
+      "Q_gen_38x4_f64_sha256": "24ed5ddaa89312cc"
+    },
+    "CID4_ST_010": {
+      "B_38x38_f64_sha256": "3e9b912753668ced",
+      "Q_gen_38x4_f64_sha256": "4e523e58d8c751f9"
+    },
+    "CID4_ST_011": {
+      "B_38x38_f64_sha256": "cab539a90d9ac8ba",
+      "Q_gen_38x4_f64_sha256": "0f19583d85554d83"
+    },
+    "CID4_ST_012": {
+      "B_38x38_f64_sha256": "4d62894b7d9a96e4",
+      "Q_gen_38x4_f64_sha256": "5c9345ab5fffaf19"
+    },
+    "CID4_ST_013": {
+      "B_38x38_f64_sha256": "cb09b267b6df5621",
+      "Q_gen_38x4_f64_sha256": "99283e517a864115"
+    },
+    "CID4_ST_014": {
+      "B_38x38_f64_sha256": "0a8504ac9d815ed9",
+      "Q_gen_38x4_f64_sha256": "169b7de6898553ed"
+    },
+    "CID4_ST_015": {
+      "B_38x38_f64_sha256": "5cff0b9c18c157d5",
+      "Q_gen_38x4_f64_sha256": "68a9935a1b13b3e6"
+    },
+    "CID4_ST_016": {
+      "B_38x38_f64_sha256": "2f5626a87744bcf7",
+      "Q_gen_38x4_f64_sha256": "7acaf1349bbaac2a"
+    },
+    "CID4_ST_017": {
+      "B_38x38_f64_sha256": "a8d77e51b3107330",
+      "Q_gen_38x4_f64_sha256": "190e30be73f53cdf"
+    },
+    "CID4_ST_018": {
+      "B_38x38_f64_sha256": "6775ef46ddd27c6c",
+      "Q_gen_38x4_f64_sha256": "77330a1343146d5f"
+    },
+    "CID4_ST_019": {
+      "B_38x38_f64_sha256": "de4da8bffac7919f",
+      "Q_gen_38x4_f64_sha256": "97b8e85f96858719"
+    },
+    "CID4_ST_020": {
+      "B_38x38_f64_sha256": "103ea288a03c991c",
+      "Q_gen_38x4_f64_sha256": "479bbcde6a185b61"
+    },
+    "CID4_ST_021": {
+      "B_38x38_f64_sha256": "c4bc3936c436a8b9",
+      "Q_gen_38x4_f64_sha256": "b6eabcb4155583bf"
+    },
+    "CID4_ST_022": {
+      "B_38x38_f64_sha256": "55e2b1d69d78f520",
+      "Q_gen_38x4_f64_sha256": "44543c13a31362ec"
+    },
+    "CID4_ST_023": {
+      "B_38x38_f64_sha256": "03fae2ace3111a21",
+      "Q_gen_38x4_f64_sha256": "c9a3433ecb02650b"
+    },
+    "CID4_ST_024": {
+      "B_38x38_f64_sha256": "cf0fb3123ed9beff",
+      "Q_gen_38x4_f64_sha256": "d8c20c29d7dc6eaf"
+    },
+    "CID4_AT_001": {
+      "B_38x38_f64_sha256": "9eb5226abe41b139",
+      "Q_gen_38x4_f64_sha256": "8509486a2065047e"
+    },
+    "CID4_AT_002": {
+      "B_38x38_f64_sha256": "fbfdeee44c5c3f95",
+      "Q_gen_38x4_f64_sha256": "2340bbebaf9e7e81"
+    },
+    "CID4_AT_003": {
+      "B_38x38_f64_sha256": "53392911b2ae53ba",
+      "Q_gen_38x4_f64_sha256": "041ea92b8163febb"
+    },
+    "CID4_AT_004": {
+      "B_38x38_f64_sha256": "f628bdb151950c0b",
+      "Q_gen_38x4_f64_sha256": "bc25195d927c9854"
+    },
+    "CID4_AT_005": {
+      "B_38x38_f64_sha256": "35d527ccc27322a5",
+      "Q_gen_38x4_f64_sha256": "e76fb2a442a325c6"
+    },
+    "CID4_AT_006": {
+      "B_38x38_f64_sha256": "75fc3d402b774392",
+      "Q_gen_38x4_f64_sha256": "1f6e0590100540e8"
+    },
+    "CID4_AT_007": {
+      "B_38x38_f64_sha256": "f5eb9d55b4d17ce9",
+      "Q_gen_38x4_f64_sha256": "eea2d6ed0a6c1790"
+    },
+    "CID4_AT_008": {
+      "B_38x38_f64_sha256": "2dc30cc4a790df57",
+      "Q_gen_38x4_f64_sha256": "44162978a9c45a3d"
+    },
+    "CID4_AT_009": {
+      "B_38x38_f64_sha256": "c9236306ab69988e",
+      "Q_gen_38x4_f64_sha256": "bef03fce5e917323"
+    },
+    "CID4_AT_010": {
+      "B_38x38_f64_sha256": "f338771fee1278ae",
+      "Q_gen_38x4_f64_sha256": "a6665a06d113e6bf"
+    },
+    "CID4_AT_011": {
+      "B_38x38_f64_sha256": "ea0f06b64ad36ae8",
+      "Q_gen_38x4_f64_sha256": "3e8edc1192e2edcb"
+    },
+    "CID4_AT_012": {
+      "B_38x38_f64_sha256": "10b4827fb102665a",
+      "Q_gen_38x4_f64_sha256": "47f90363c58299c8"
+    },
+    "CID4_AT_013": {
+      "B_38x38_f64_sha256": "ca8371eedeaa3a5f",
+      "Q_gen_38x4_f64_sha256": "516280ccd9cef4c8"
+    },
+    "CID4_AT_014": {
+      "B_38x38_f64_sha256": "0d20b73940c1908f",
+      "Q_gen_38x4_f64_sha256": "07e818b241a0091d"
+    },
+    "CID4_AT_015": {
+      "B_38x38_f64_sha256": "4782a5daf204bf8e",
+      "Q_gen_38x4_f64_sha256": "e0e70c6c145ef7b0"
+    },
+    "CID4_AT_016": {
+      "B_38x38_f64_sha256": "60fff0a3ff41914d",
+      "Q_gen_38x4_f64_sha256": "e3ef165d64be7f50"
+    },
+    "CID4_AT_017": {
+      "B_38x38_f64_sha256": "86155f1e75b96791",
+      "Q_gen_38x4_f64_sha256": "ede14abd20e6e1b7"
+    },
+    "CID4_AT_018": {
+      "B_38x38_f64_sha256": "88c88d063588ea39",
+      "Q_gen_38x4_f64_sha256": "ca7c749595b9be56"
+    },
+    "CID4_AT_019": {
+      "B_38x38_f64_sha256": "9ee5e1149baffeb5",
+      "Q_gen_38x4_f64_sha256": "80c71c67878740e1"
+    },
+    "CID4_AT_020": {
+      "B_38x38_f64_sha256": "78fa172d8d74bc73",
+      "Q_gen_38x4_f64_sha256": "87a3a3e7cf590e73"
+    },
+    "CID4_AT_021": {
+      "B_38x38_f64_sha256": "d33a1e8af82ab64e",
+      "Q_gen_38x4_f64_sha256": "1dbea7d4f94c78c7"
+    },
+    "CID4_AT_022": {
+      "B_38x38_f64_sha256": "31cdcc71645f329d",
+      "Q_gen_38x4_f64_sha256": "a80e35d8896c0d1c"
+    },
+    "CID4_AT_023": {
+      "B_38x38_f64_sha256": "16eb76e00933c6c0",
+      "Q_gen_38x4_f64_sha256": "7a0eb025ed43e285"
+    },
+    "CID4_AT_024": {
+      "B_38x38_f64_sha256": "bb2f51518c8f6572",
+      "Q_gen_38x4_f64_sha256": "bd9449ec69982477"
+    },
+    "CID4_SI_001": {
+      "B_38x38_f64_sha256": "ba26103c4219f18f",
+      "Q_gen_38x4_f64_sha256": "25f9fa916ea47c97"
+    },
+    "CID4_SI_002": {
+      "B_38x38_f64_sha256": "b79d006ebdd1546e",
+      "Q_gen_38x4_f64_sha256": "cf488e8bdd4a5536"
+    },
+    "CID4_SI_003": {
+      "B_38x38_f64_sha256": "0df2ad78d460b14b",
+      "Q_gen_38x4_f64_sha256": "78153cfb617d9e20"
+    },
+    "CID4_SI_004": {
+      "B_38x38_f64_sha256": "fdabbaa62045de43",
+      "Q_gen_38x4_f64_sha256": "94a995785299dfd3"
+    },
+    "CID4_SI_005": {
+      "B_38x38_f64_sha256": "6de1898674ce4254",
+      "Q_gen_38x4_f64_sha256": "0daa2bcc2a077069"
+    },
+    "CID4_SI_006": {
+      "B_38x38_f64_sha256": "b6f88606bb62bb02",
+      "Q_gen_38x4_f64_sha256": "53c7346457326685"
+    },
+    "CID4_SI_007": {
+      "B_38x38_f64_sha256": "f8c2ae4990c08d38",
+      "Q_gen_38x4_f64_sha256": "79824acf74042a62"
+    },
+    "CID4_SI_008": {
+      "B_38x38_f64_sha256": "b39ebda8b986740e",
+      "Q_gen_38x4_f64_sha256": "9f1198f7d153cec5"
+    },
+    "CID4_SI_009": {
+      "B_38x38_f64_sha256": "2284e0f0b2d733ae",
+      "Q_gen_38x4_f64_sha256": "f6810dca5a9e4d76"
+    },
+    "CID4_SI_010": {
+      "B_38x38_f64_sha256": "3e4e532848024738",
+      "Q_gen_38x4_f64_sha256": "3075029dfcd667f4"
+    },
+    "CID4_SI_011": {
+      "B_38x38_f64_sha256": "dc5a671a52372ad4",
+      "Q_gen_38x4_f64_sha256": "f6d5875937a361cd"
+    },
+    "CID4_SI_012": {
+      "B_38x38_f64_sha256": "7d65473018d185b8",
+      "Q_gen_38x4_f64_sha256": "013b2d0958644c24"
+    },
+    "CID4_SI_013": {
+      "B_38x38_f64_sha256": "0db7e9cb3e9c3026",
+      "Q_gen_38x4_f64_sha256": "578f88bb69ab4121"
+    },
+    "CID4_SI_014": {
+      "B_38x38_f64_sha256": "59ff2ba2bd38dbc6",
+      "Q_gen_38x4_f64_sha256": "b3131ae9a9fd785f"
+    },
+    "CID4_SI_015": {
+      "B_38x38_f64_sha256": "0552254f908cd89b",
+      "Q_gen_38x4_f64_sha256": "a989007c7361c0f7"
+    },
+    "CID4_SI_016": {
+      "B_38x38_f64_sha256": "f97268ca7e85b2d7",
+      "Q_gen_38x4_f64_sha256": "112177788de39053"
+    },
+    "CID4_SI_017": {
+      "B_38x38_f64_sha256": "9f70f3c549615a97",
+      "Q_gen_38x4_f64_sha256": "041d26e043e88543"
+    },
+    "CID4_SI_018": {
+      "B_38x38_f64_sha256": "d588ba2f2dcbbd6c",
+      "Q_gen_38x4_f64_sha256": "93337bfd65474356"
+    },
+    "CID4_SI_019": {
+      "B_38x38_f64_sha256": "8ad7d19ec0e5d853",
+      "Q_gen_38x4_f64_sha256": "001331ea22c2fc2d"
+    },
+    "CID4_SI_020": {
+      "B_38x38_f64_sha256": "16e5ef0c59f07dcd",
+      "Q_gen_38x4_f64_sha256": "ed9a2d21c2d14f96"
+    },
+    "CID4_SI_021": {
+      "B_38x38_f64_sha256": "77dc7840563932a2",
+      "Q_gen_38x4_f64_sha256": "054d7765c260a4f0"
+    },
+    "CID4_SI_022": {
+      "B_38x38_f64_sha256": "918b0fd56ea546db",
+      "Q_gen_38x4_f64_sha256": "2a9e3eea8f010356"
+    },
+    "CID4_SI_023": {
+      "B_38x38_f64_sha256": "b877cd4e183656f0",
+      "Q_gen_38x4_f64_sha256": "64e7dd1357f13832"
+    },
+    "CID4_SI_024": {
+      "B_38x38_f64_sha256": "a319cced9840fc0a",
+      "Q_gen_38x4_f64_sha256": "a07dd3fd84b29787"
+    },
+    "CID4_IN_001": {
+      "B_38x38_f64_sha256": "8759d03204989b84",
+      "Q_gen_38x4_f64_sha256": "0d25cebd9d38c29e"
+    },
+    "CID4_IN_002": {
+      "B_38x38_f64_sha256": "d4306fbde5b8e1bc",
+      "Q_gen_38x4_f64_sha256": "b585700e55d470df"
+    },
+    "CID4_IN_003": {
+      "B_38x38_f64_sha256": "9e31aad734cd2589",
+      "Q_gen_38x4_f64_sha256": "8c272b902dbf20a6"
+    },
+    "CID4_IN_004": {
+      "B_38x38_f64_sha256": "8e9332de5011ee5c",
+      "Q_gen_38x4_f64_sha256": "6f243b65e6af58a2"
+    },
+    "CID4_IN_005": {
+      "B_38x38_f64_sha256": "f4f8e1e5b586dcc7",
+      "Q_gen_38x4_f64_sha256": "8dcdb37c00c0da84"
+    },
+    "CID4_IN_006": {
+      "B_38x38_f64_sha256": "d1fb7b9987acf4cc",
+      "Q_gen_38x4_f64_sha256": "662edc103cb129c4"
+    },
+    "CID4_IN_007": {
+      "B_38x38_f64_sha256": "630278f4e4338026",
+      "Q_gen_38x4_f64_sha256": "0c0dbe70152097f3"
+    },
+    "CID4_IN_008": {
+      "B_38x38_f64_sha256": "b1142dcb31872076",
+      "Q_gen_38x4_f64_sha256": "76485866482f6d7d"
+    },
+    "CID4_IN_009": {
+      "B_38x38_f64_sha256": "8850964661cbfc80",
+      "Q_gen_38x4_f64_sha256": "3affeec3ee8b4d39"
+    },
+    "CID4_IN_010": {
+      "B_38x38_f64_sha256": "143b0333143dcbac",
+      "Q_gen_38x4_f64_sha256": "7b274ad7fedb2dfc"
+    },
+    "CID4_IN_011": {
+      "B_38x38_f64_sha256": "6dd50aca6c24b8e3",
+      "Q_gen_38x4_f64_sha256": "604c30b30a5b1ba5"
+    },
+    "CID4_IN_012": {
+      "B_38x38_f64_sha256": "0eb7261e64904f9f",
+      "Q_gen_38x4_f64_sha256": "4e06db43ce892f5d"
+    },
+    "CID4_IN_013": {
+      "B_38x38_f64_sha256": "785643e3fd309c64",
+      "Q_gen_38x4_f64_sha256": "616cb8c439ff16cb"
+    },
+    "CID4_IN_014": {
+      "B_38x38_f64_sha256": "034798447b57f53c",
+      "Q_gen_38x4_f64_sha256": "443a1ff4a6bd1d78"
+    },
+    "CID4_IN_015": {
+      "B_38x38_f64_sha256": "f067677036f6e6c1",
+      "Q_gen_38x4_f64_sha256": "ec3e78c5366b3a40"
+    },
+    "CID4_IN_016": {
+      "B_38x38_f64_sha256": "7d3fb31f76d1ce21",
+      "Q_gen_38x4_f64_sha256": "361389683c10aeba"
+    },
+    "CID4_IN_017": {
+      "B_38x38_f64_sha256": "bd1e99133123012f",
+      "Q_gen_38x4_f64_sha256": "7ed639123d0b2305"
+    },
+    "CID4_IN_018": {
+      "B_38x38_f64_sha256": "cc0a33e2725fc77d",
+      "Q_gen_38x4_f64_sha256": "8816120834992b7c"
+    },
+    "CID4_IN_019": {
+      "B_38x38_f64_sha256": "334196ecbc863592",
+      "Q_gen_38x4_f64_sha256": "61771f07649f7f1d"
+    },
+    "CID4_IN_020": {
+      "B_38x38_f64_sha256": "5eb3fc5b44625072",
+      "Q_gen_38x4_f64_sha256": "77bbe5df9afe8c8d"
+    },
+    "CID4_IN_021": {
+      "B_38x38_f64_sha256": "fd08e31988be8c9c",
+      "Q_gen_38x4_f64_sha256": "63b3e6a135be51b5"
+    },
+    "CID4_IN_022": {
+      "B_38x38_f64_sha256": "788fba7b7bb9b3ba",
+      "Q_gen_38x4_f64_sha256": "64b0ff27556c4276"
+    },
+    "CID4_IN_023": {
+      "B_38x38_f64_sha256": "24a3e229f6f3701c",
+      "Q_gen_38x4_f64_sha256": "a5312fa8237316b3"
+    },
+    "CID4_IN_024": {
+      "B_38x38_f64_sha256": "8c0d2a22003aaa08",
+      "Q_gen_38x4_f64_sha256": "dd8324adc7bb0dfe"
+    },
+    "COOD4_001": {
+      "B_38x38_f64_sha256": "5128c03f336fa916",
+      "Q_gen_38x4_f64_sha256": "c3b76a4f738185f9"
+    },
+    "COOD4_002": {
+      "B_38x38_f64_sha256": "7a9558de16ef1b43",
+      "Q_gen_38x4_f64_sha256": "3326e96afa15a4da"
+    },
+    "COOD4_003": {
+      "B_38x38_f64_sha256": "8ce4fddd00111fce",
+      "Q_gen_38x4_f64_sha256": "ab4911540800c5f8"
+    },
+    "COOD4_004": {
+      "B_38x38_f64_sha256": "69cc6a384a92053a",
+      "Q_gen_38x4_f64_sha256": "d6201ea3d19c2a8f"
+    },
+    "COOD4_005": {
+      "B_38x38_f64_sha256": "cea4e6dd807ce384",
+      "Q_gen_38x4_f64_sha256": "23ab7d6b1996f5bf"
+    },
+    "COOD4_006": {
+      "B_38x38_f64_sha256": "5d0dcbc6a67de618",
+      "Q_gen_38x4_f64_sha256": "cf7a23c5507781eb"
+    },
+    "COOD4_007": {
+      "B_38x38_f64_sha256": "80a24590aaf93dce",
+      "Q_gen_38x4_f64_sha256": "48c4088eacd8d141"
+    },
+    "COOD4_008": {
+      "B_38x38_f64_sha256": "b40005d3ef5146ca",
+      "Q_gen_38x4_f64_sha256": "0889e7080678c797"
+    },
+    "COOD4_009": {
+      "B_38x38_f64_sha256": "28f5bc8bf561b0d7",
+      "Q_gen_38x4_f64_sha256": "9044ce01a646e286"
+    },
+    "COOD4_010": {
+      "B_38x38_f64_sha256": "df05784a359f0f0e",
+      "Q_gen_38x4_f64_sha256": "6c371c7a277b85a7"
+    },
+    "COOD4_011": {
+      "B_38x38_f64_sha256": "4a32e17d58025430",
+      "Q_gen_38x4_f64_sha256": "84952b529a54147a"
+    },
+    "COOD4_012": {
+      "B_38x38_f64_sha256": "e0a3e180676f7c7d",
+      "Q_gen_38x4_f64_sha256": "7d54febf7d61fe35"
+    },
+    "COOD4_013": {
+      "B_38x38_f64_sha256": "27ba00032f0e9b6f",
+      "Q_gen_38x4_f64_sha256": "396cf87328839c3e"
+    },
+    "COOD4_014": {
+      "B_38x38_f64_sha256": "da584fe508f70f59",
+      "Q_gen_38x4_f64_sha256": "11aca274bbf1a975"
+    },
+    "COOD4_015": {
+      "B_38x38_f64_sha256": "31a6564f46961acc",
+      "Q_gen_38x4_f64_sha256": "784276b94544c369"
+    },
+    "COOD4_016": {
+      "B_38x38_f64_sha256": "97335b3eb03ce510",
+      "Q_gen_38x4_f64_sha256": "a6694e1c35260c41"
+    },
+    "COOD4_017": {
+      "B_38x38_f64_sha256": "6652622f47c53f0b",
+      "Q_gen_38x4_f64_sha256": "e7333f6d17d73ee6"
+    },
+    "COOD4_018": {
+      "B_38x38_f64_sha256": "d660288df4121eb7",
+      "Q_gen_38x4_f64_sha256": "e022c767b1d58ba9"
+    },
+    "COOD4_019": {
+      "B_38x38_f64_sha256": "1f68e45dadb354e2",
+      "Q_gen_38x4_f64_sha256": "e5936242fb93080e"
+    },
+    "COOD4_020": {
+      "B_38x38_f64_sha256": "67d82a042623a879",
+      "Q_gen_38x4_f64_sha256": "78ae15773098c2f6"
+    },
+    "COOD4_021": {
+      "B_38x38_f64_sha256": "b4d9b0296d1e046b",
+      "Q_gen_38x4_f64_sha256": "cd287f7bfa13ae11"
+    },
+    "COOD4_022": {
+      "B_38x38_f64_sha256": "cbd0f5c523734194",
+      "Q_gen_38x4_f64_sha256": "b4d9f3575dfa8867"
+    },
+    "COOD4_023": {
+      "B_38x38_f64_sha256": "b0572d0867f1a6fc",
+      "Q_gen_38x4_f64_sha256": "20c489745342bab2"
+    },
+    "COOD4_024": {
+      "B_38x38_f64_sha256": "27ff8ae4de37f35c",
+      "Q_gen_38x4_f64_sha256": "dda62c60f9b0af84"
+    },
+    "COOD4_025": {
+      "B_38x38_f64_sha256": "d9be8b7d1936aaa3",
+      "Q_gen_38x4_f64_sha256": "8f12284d0354c192"
+    },
+    "COOD4_026": {
+      "B_38x38_f64_sha256": "3c57855d41636037",
+      "Q_gen_38x4_f64_sha256": "9bcd922d85135209"
+    },
+    "COOD4_027": {
+      "B_38x38_f64_sha256": "9d1770b34e21f5b7",
+      "Q_gen_38x4_f64_sha256": "38f69c6433c4147c"
+    },
+    "COOD4_028": {
+      "B_38x38_f64_sha256": "fb0a7efefa101908",
+      "Q_gen_38x4_f64_sha256": "81dc41966d92df00"
+    },
+    "COOD4_029": {
+      "B_38x38_f64_sha256": "2bdb056a1900a6eb",
+      "Q_gen_38x4_f64_sha256": "97a6ee294f3f4757"
+    },
+    "COOD4_030": {
+      "B_38x38_f64_sha256": "e1c04516d20255e9",
+      "Q_gen_38x4_f64_sha256": "5da8b4441ddeb067"
+    },
+    "COOD4_031": {
+      "B_38x38_f64_sha256": "c72d836358ce2596",
+      "Q_gen_38x4_f64_sha256": "9fa644a64cd6c21d"
+    },
+    "COOD4_032": {
+      "B_38x38_f64_sha256": "cd65a208c38ab101",
+      "Q_gen_38x4_f64_sha256": "602597b7a4e846c6"
+    }
+  }
+}

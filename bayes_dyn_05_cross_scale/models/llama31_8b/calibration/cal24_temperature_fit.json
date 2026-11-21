@@ -1,0 +1,12 @@
+{
+  "temperature_t": 1.905577341511913,
+  "n_cal_contexts": 24,
+  "n_q_perp": 8,
+  "d_dim": 4096,
+  "denom_floor_applied": 1e-12,
+  "n_denoms_clamped": 0,
+  "min_raw_denom": 0.6513676573439398,
+  "median_raw_denom": 0.8574639097682326,
+  "median_per_dir_ratio": 1.66894749213497,
+  "max_per_dir_ratio": 4.275136727862899
+}

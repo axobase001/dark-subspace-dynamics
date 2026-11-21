@@ -1,0 +1,16 @@
+{
+  "experiment_id": "BAYES-DYN-04",
+  "session_name": "bayes-dyn-04",
+  "session_id_line": "[bayes-dyn-04] gpu-l4-s-ass1b0-9gqpe7fhwicv | Hardware: L4 | Shape: Standard | Variant: GPU | Status: IDLE",
+  "stop_reason": "NORMAL_COMPLETED",
+  "final_heartbeat_status": "COMPLETED",
+  "stop_requested_utc": "2026-11-20T05:42:11.374718+00:00",
+  "stop_confirmed_utc": "2026-11-20T05:42:15.357307+00:00",
+  "remote_stop_confirmed": true,
+  "wall_clock_sec": 330.04,
+  "reported_rate_per_hr": 1.94,
+  "colab_cu_before": 110.36,
+  "colab_cu_after": 110.36,
+  "colab_cu_delta": 0.0,
+  "post_stop_active_assignments_account": 0
+}

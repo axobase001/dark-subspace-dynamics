@@ -1,0 +1,23 @@
+{"utc": "2026-11-20T07:16:22.789046+00:00", "event": "session_created", "session_line": "[bayes-dyn-05-qwen25-3b] gpu-l4-s-ass1a0-fieogln7rf1n | Hardware: L4 | Shape: Standard | Variant: GPU | Status: IDLE", "rate_hr": 1.94, "eff_cu_cap": 2.5, "hard_deadline_min": 45.0}
+{"utc": "2026-11-20T07:16:41.250083+00:00", "event": "detached_launch_ok", "out": "[colab] A new version of Colab CLI is available: 0.8.0 (current: 0.7.4)\n[colab] Run 'colab update' to update.\n[colab] To silence this check, set \"enable_update_check\": false in ~/.config/colab-cli/settings.json\n\nDETACHED_LAUNCH_OK model=qwen25_3b pid=1456"}
+{"utc": "2026-11-20T07:17:13.020508+00:00", "event": "heartbeat", "wall_min": 0.87, "phase": "LOAD_MODEL", "step": 0, "status": "RUNNING", "no_prog_s": 0.0}
+{"utc": "2026-11-20T07:18:44.876390+00:00", "event": "heartbeat", "wall_min": 2.4, "phase": "DEV_FIT96", "step": 0, "status": "RUNNING", "no_prog_s": 0.0}
+{"utc": "2026-11-20T07:19:16.491158+00:00", "event": "heartbeat", "wall_min": 2.93, "phase": "DEV_FIT96", "step": 8, "status": "RUNNING", "no_prog_s": 0.0}
+{"utc": "2026-11-20T07:19:48.361722+00:00", "event": "heartbeat", "wall_min": 3.46, "phase": "DEV_FIT96", "step": 24, "status": "RUNNING", "no_prog_s": 0.0}
+{"utc": "2026-11-20T07:20:21.973514+00:00", "event": "heartbeat", "wall_min": 4.02, "phase": "DEV_FIT96", "step": 40, "status": "RUNNING", "no_prog_s": 0.0}
+{"utc": "2026-11-20T07:20:53.641141+00:00", "event": "heartbeat", "wall_min": 4.55, "phase": "DEV_FIT96", "step": 56, "status": "RUNNING", "no_prog_s": 0.0}
+{"utc": "2026-11-20T07:21:25.359593+00:00", "event": "heartbeat", "wall_min": 5.08, "phase": "DEV_FIT96", "step": 64, "status": "RUNNING", "no_prog_s": 0.0}
+{"utc": "2026-11-20T07:21:57.057229+00:00", "event": "heartbeat", "wall_min": 5.6, "phase": "DEV_FIT96", "step": 80, "status": "RUNNING", "no_prog_s": 0.0}
+{"utc": "2026-11-20T07:22:29.251797+00:00", "event": "heartbeat", "wall_min": 6.13, "phase": "DEV_TUNE16", "step": 0, "status": "RUNNING", "no_prog_s": 0.0}
+{"utc": "2026-11-20T07:23:03.666869+00:00", "event": "heartbeat", "wall_min": 6.67, "phase": "DEV_TUNE16", "step": 8, "status": "RUNNING", "no_prog_s": 0.0}
+{"utc": "2026-11-20T07:23:42.448925+00:00", "event": "heartbeat", "wall_min": 7.32, "phase": "CAL_24", "step": 0, "status": "RUNNING", "no_prog_s": 0.0}
+{"utc": "2026-11-20T07:24:15.997464+00:00", "event": "heartbeat", "wall_min": 7.89, "phase": "CONFIRM_CONFIRM_ID", "step": 0, "status": "RUNNING", "no_prog_s": 0.0}
+{"utc": "2026-11-20T07:24:49.335110+00:00", "event": "heartbeat", "wall_min": 8.45, "phase": "CONFIRM_CONFIRM_ID", "step": 16, "status": "RUNNING", "no_prog_s": 0.0}
+{"utc": "2026-11-20T07:25:22.432606+00:00", "event": "heartbeat", "wall_min": 9.0, "phase": "CONFIRM_CONFIRM_ID", "step": 24, "status": "RUNNING", "no_prog_s": 0.0}
+{"utc": "2026-11-20T07:25:55.545066+00:00", "event": "heartbeat", "wall_min": 9.56, "phase": "CONFIRM_CONFIRM_ID", "step": 40, "status": "RUNNING", "no_prog_s": 0.0}
+{"utc": "2026-11-20T07:26:28.727760+00:00", "event": "heartbeat", "wall_min": 10.11, "phase": "CONFIRM_CONFIRM_ID", "step": 56, "status": "RUNNING", "no_prog_s": 0.0}
+{"utc": "2026-11-20T07:27:07.085620+00:00", "event": "heartbeat", "wall_min": 10.74, "phase": "CONFIRM_CONFIRM_OOD", "step": 0, "status": "RUNNING", "no_prog_s": 0.0}
+{"utc": "2026-11-20T07:27:39.991701+00:00", "event": "heartbeat", "wall_min": 11.3, "phase": "CONFIRM_CONFIRM_OOD", "step": 16, "status": "RUNNING", "no_prog_s": 0.0}
+{"utc": "2026-11-20T07:28:13.482745+00:00", "event": "heartbeat", "wall_min": 11.85, "phase": "CONFIRM_CONFIRM_OOD", "step": 24, "status": "RUNNING", "no_prog_s": 0.0}
+{"utc": "2026-11-20T07:28:45.607708+00:00", "event": "heartbeat", "wall_min": 12.41, "phase": "TRAJECTORY_12", "step": 8, "status": "RUNNING", "no_prog_s": 0.0}
+{"utc": "2026-11-20T07:29:20.659139+00:00", "event": "heartbeat", "wall_min": 12.94, "phase": "DONE", "step": 1, "status": "COMPLETED", "no_prog_s": 0.0}

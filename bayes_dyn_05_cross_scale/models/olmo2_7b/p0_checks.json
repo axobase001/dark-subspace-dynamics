@@ -1,0 +1,52 @@
+{
+  "all_p0_passed": true,
+  "fp64_synthetic_conditioning": {
+    "support_interp_rel_err": 4.60983139317723e-16,
+    "C_k_support_norm": 1.0426131904777072e-15,
+    "batch_vs_seq_M_rel_err": 4.355694938920689e-16,
+    "batch_vs_seq_C_rel_err": 6.398371504901112e-16,
+    "patch_q_perp_invariance_err": 1.3972430358514935e-15,
+    "passed_1e9": true
+  },
+  "zero_hook_max_logit_diff_vs_cpu_native": 3.814697265625e-05,
+  "zero_pert_matched_batch1": {
+    "max_D_geom": 0.0,
+    "max_abs_dF": 0.0
+  },
+  "rmsnorm_analytic_vs_module_max_rel_diff": 6.50186506621989e-08,
+  "jvp_batched_vs_batch1_max_rel_err": 1.7781523656488532e-06,
+  "jvp_repeatability_max_rel_err": 1.6074787047581668e-06,
+  "jvp_linear_comb_max_rel_err": 1.7969092946659205e-06,
+  "mid_layer_chain_max_rel_err": 1.2195008826938663e-06,
+  "jvp_fd_curve": {
+    "by_step": {
+      "0.0005": {
+        "median_rel_err": 0.0011211176436824398,
+        "max_rel_err": 0.001241149962726881,
+        "median_abs_err": 0.00196810221671197
+      },
+      "0.001": {
+        "median_rel_err": 0.0005977435838902975,
+        "max_rel_err": 0.0006338826970012987,
+        "median_abs_err": 0.001046551443576282
+      },
+      "0.005": {
+        "median_rel_err": 0.00012881089544468073,
+        "max_rel_err": 0.00014013705153636597,
+        "median_abs_err": 0.00023220265803169569
+      },
+      "0.01": {
+        "median_rel_err": 0.0001504503636314885,
+        "max_rel_err": 0.0001654033679563806,
+        "median_abs_err": 0.00027658800321381705
+      }
+    },
+    "best_step": "0.005",
+    "best_median_rel_err": 0.00012881089544468073
+  },
+  "adjoint_consistency_max_rel_err": 1.3090107279206106e-05,
+  "isolation_checks": {
+    "budget_rejected": true,
+    "learning_vjp_rejected": true
+  }
+}

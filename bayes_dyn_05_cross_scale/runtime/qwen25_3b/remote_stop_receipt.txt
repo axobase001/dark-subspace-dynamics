@@ -1,0 +1,53 @@
+=== BAYES-DYN-05 (qwen25_3b: Qwen2.5-3B-Instruct) REMOTE LIFECYCLE & STOP RECEIPT ===
+
+--- PRE-RUN (2026-11-20T07:16:13.702801+00:00) ---
+[colab] A new version of Colab CLI is available: 0.8.0 (current: 0.7.4)
+[colab] Run 'colab update' to update.
+[colab] To silence this check, set "enable_update_check": false in ~/.config/colab-cli/settings.json
+
+Current balance: 110.20 compute units
+Usage rate: 0.00/hr
+Active assignments: 0
+[colab] A new version of Colab CLI is available: 0.8.0 (current: 0.7.4)
+[colab] Run 'colab update' to update.
+[colab] To silence this check, set "enable_update_check": false in ~/.config/colab-cli/settings.json
+
+[colab] No active sessions.
+
+--- SESSION CREATED (2026-11-20T07:16:22.787729+00:00) ---
+[bayes-dyn-05-qwen25-3b] gpu-l4-s-ass1a0-fieogln7rf1n | Hardware: L4 | Shape: Standard | Variant: GPU | Status: IDLE
+Rate=1.94/hr | eff_cu_cap=2.50 | Hard deadline=45.0 min
+[colab] A new version of Colab CLI is available: 0.8.0 (current: 0.7.4)
+[colab] Run 'colab update' to update.
+[colab] To silence this check, set "enable_update_check": false in ~/.config/colab-cli/settings.json
+
+Current balance: 110.20 compute units
+Usage rate: 1.94/hr
+Active assignments: 1
+
+--- REMOTE STOP (2026-11-20T07:30:26.512305+00:00 -> 2026-11-20T07:30:30.402080+00:00) ---
+Reason: NORMAL_COMPLETED
+rc=0
+[colab] A new version of Colab CLI is available: 0.8.0 (current: 0.7.4)
+[colab] Run 'colab update' to update.
+[colab] To silence this check, set "enable_update_check": false in ~/.config/colab-cli/settings.json
+
+[colab] Stopping session 'bayes-dyn-05-qwen25-3b'...
+[colab] Session terminated.
+
+
+--- POST-STOP STATUS ---
+[colab] A new version of Colab CLI is available: 0.8.0 (current: 0.7.4)
+[colab] Run 'colab update' to update.
+[colab] To silence this check, set "enable_update_check": false in ~/.config/colab-cli/settings.json
+
+[colab] No active sessions.
+
+--- POST-STOP USAGE ---
+[colab] A new version of Colab CLI is available: 0.8.0 (current: 0.7.4)
+[colab] Run 'colab update' to update.
+[colab] To silence this check, set "enable_update_check": false in ~/.config/colab-cli/settings.json
+
+Current balance: 109.84 compute units
+Usage rate: 0.00/hr
+Active assignments: 0

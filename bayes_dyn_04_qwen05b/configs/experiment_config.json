@@ -1,0 +1,99 @@
+{
+  "experiment_id": "BAYES-DYN-04",
+  "date": "2026-11-20",
+  "model_id": "Qwen/Qwen2.5-0.5B-Instruct",
+  "model_revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+  "dtype": "torch.float32",
+  "attn_implementation": "eager",
+  "allow_tf32": false,
+  "master_seed": 2026112004,
+  "derived_seeds": {
+    "data_generation": 2026112041,
+    "probe_bank_38x38": 2026112042,
+    "q_general_4": 2026112043,
+    "mispair_signed_perm": 2026112044,
+    "dev_oof_folds": 2026112045,
+    "dev_tune_banks": [2026112046, 2026112047, 2026112048],
+    "bootstrap_stats": 2026112049,
+    "trajectory_panel_select": 2026112050,
+    "random_subspace_diag": 2026112051
+  },
+  "layers": {
+    "source_layer": 16,
+    "mid_layer": 20,
+    "target_layer": 24
+  },
+  "dark_definition": {
+    "bright_energy_threshold": 0.99,
+    "report_thresholds": [0.95, 0.98, 0.99, 0.995, 0.999],
+    "expected_n_bright_05b": 858,
+    "expected_n_dark_05b": 38
+  },
+  "basis": {
+    "legacy_indices_12": {
+      "bright": [0, 1, 2, 3],
+      "middle": [446, 447, 448, 449],
+      "dark": [892, 893, 894, 895]
+    }
+  },
+  "budgets": {
+    "all_k": [0, 4, 8, 16],
+    "primary_k": 8,
+    "n_q_perp": 8,
+    "n_q_general": 4
+  },
+  "prior_model": {
+    "ridge_alpha_grid": [1.0, 10.0, 100.0, 1000.0],
+    "cov_eta_grid": [0.05, 0.2, 0.5, 0.8, 1.0],
+    "oof_folds": 5,
+    "output_cov_rank": 64,
+    "solver_jitter": 1e-12
+  },
+  "data": {
+    "options": ["A", "B", "C", "D"],
+    "id_families": [
+      "state_tracking",
+      "attribute_binding",
+      "simple_arithmetic",
+      "instruction_priority"
+    ],
+    "ood_family": "two_stage_conditional_update_relational_lookup",
+    "n_dev_pilot": 16,
+    "n_cal": 32,
+    "n_confirm_id": 96,
+    "n_confirm_ood": 32,
+    "n_trajectory_panel": 16
+  },
+  "control": {
+    "tau_candidates_ordered": [0.05, 0.02, 0.01],
+    "radius_alpha": 0.01,
+    "pilot_hit_min_count": 14,
+    "pilot_target_tol": 0.10,
+    "pilot_lin_rel_err_max": 0.05,
+    "zero_a_rel_tol": 1e-9
+  },
+  "p0_thresholds": {
+    "zero_pert_D_max": 1e-6,
+    "zero_pert_abs_dF_max": 1e-6,
+    "jvp_fd_median_max": 5e-3,
+    "adjoint_rel_max": 1e-3,
+    "linearity_rel_max": 1e-4,
+    "fp64_synth_cond_max": 1e-9,
+    "archived_cond_max": 1e-6,
+    "fd_step_sizes": [1e-4, 5e-4, 1e-3, 5e-3, 1e-2],
+    "near_zero_denom_abs_floor": 1e-6
+  },
+  "stats": {
+    "bootstrap_resamples": 20000,
+    "coverage_levels": [0.50, 0.80, 0.90, 0.95]
+  },
+  "budget": {
+    "max_cu": 2.0,
+    "auto_release_cu_threshold": 1.8,
+    "max_wall_clock_min": 60,
+    "optional_diag_cutoff_min": 45,
+    "heartbeat_interval_sec": 30,
+    "max_no_heartbeat_sec": 180,
+    "max_no_phase_progress_sec": 480
+  }
+}

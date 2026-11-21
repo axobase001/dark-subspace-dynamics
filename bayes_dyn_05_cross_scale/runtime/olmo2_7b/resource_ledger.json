@@ -1,0 +1,21 @@
+{
+  "experiment_id": "BAYES-DYN-05",
+  "model_key": "olmo2_7b",
+  "label": "OLMo-2-1124-7B-Instruct",
+  "gpu_requested": "L4",
+  "high_mem": false,
+  "session_name": "bayes-dyn-05-olmo2-7b",
+  "session_id_line": "[bayes-dyn-05-olmo2-7b] gpu-l4-s-ass1a1-2e2o111mk0ip6 | Hardware: L4 | Shape: Standard | Variant: GPU | Status: IDLE",
+  "stop_reason": "NORMAL_COMPLETED",
+  "final_heartbeat_status": "COMPLETED",
+  "stop_requested_utc": "2026-11-20T10:04:56.788956+00:00",
+  "stop_confirmed_utc": "2026-11-20T10:05:00.227825+00:00",
+  "remote_stop_confirmed": true,
+  "wall_clock_sec": 2097.71,
+  "reported_rate_per_hr": 1.94,
+  "estimated_cu_from_wall": 1.1304,
+  "colab_cu_before": 107.16,
+  "colab_cu_after": 106.12,
+  "colab_cu_delta_immediate": 1.04,
+  "post_stop_active_assignments_account": 0
+}

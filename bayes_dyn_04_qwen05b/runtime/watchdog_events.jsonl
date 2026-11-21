@@ -1,0 +1,7 @@
+{"utc": "2026-11-20T05:36:57.853602+00:00", "event": "session_created", "session_line": "[bayes-dyn-04] gpu-l4-s-ass1b0-9gqpe7fhwicv | Hardware: L4 | Shape: Standard | Variant: GPU | Status: IDLE", "rate_hr": 1.94, "hard_deadline_min": 55.67}
+{"utc": "2026-11-20T05:37:09.750195+00:00", "event": "detached_launch_ok", "out": "[colab] A new version of Colab CLI is available: 0.8.0 (current: 0.7.4)\n[colab] Run 'colab update' to update.\n[colab] To silence this check, set \"enable_update_check\": false in ~/.config/colab-cli/settings.json\n\nDETACHED_LAUNCH_OK pid=1052"}
+{"utc": "2026-11-20T05:37:42.155518+00:00", "event": "hb_ok", "wall_min": 0.81, "phase": "LOAD_MODEL", "step": 0, "status": "RUNNING", "no_hb": 0.0, "no_prog": 0.0, "cu": 110.36}
+{"utc": "2026-11-20T05:38:14.461279+00:00", "event": "hb_ok", "wall_min": 1.35, "phase": "CONFIRM_CONFIRM_ID", "step": 0, "status": "RUNNING", "no_hb": 0.0, "no_prog": 0.0, "cu": 110.36}
+{"utc": "2026-11-20T05:38:46.838068+00:00", "event": "hb_ok", "wall_min": 1.88, "phase": "CONFIRM_CONFIRM_ID", "step": 48, "status": "RUNNING", "no_hb": 0.0, "no_prog": 0.0, "cu": 110.36}
+{"utc": "2026-11-20T05:39:19.206442+00:00", "event": "hb_ok", "wall_min": 2.42, "phase": "CONFIRM_CONFIRM_OOD", "step": 0, "status": "RUNNING", "no_hb": 0.0, "no_prog": 0.0, "cu": 110.36}
+{"utc": "2026-11-20T05:39:54.176034+00:00", "event": "hb_ok", "wall_min": 3.01, "phase": "DONE", "step": 1, "status": "COMPLETED", "no_hb": 0.0, "no_prog": 0.0, "cu": 110.36}

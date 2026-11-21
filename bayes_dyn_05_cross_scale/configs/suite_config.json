@@ -1,0 +1,157 @@
+{
+  "experiment_id": "BAYES-DYN-05",
+  "title": "Cross-Scale & Cross-Architecture Replication of Evidence-Updated Dark-Subspace Dynamics Maps",
+  "master_seed": 2026112005,
+  "derived_seeds": {
+    "data_split": 2026112051,
+    "dev_oof_folds": 2026112052,
+    "probe_bank_38x38": 2026112053,
+    "q_general_4": 2026112054,
+    "mispair_perm": 2026112055,
+    "bootstrap_stats": 2026112056,
+    "random_subspace_diag": 2026112057
+  },
+  "budget": {
+    "user_hard_cu_cap": 20.0,
+    "watchdog_global_cu_cap": 18.0,
+    "baseline_cu_before_suite": 110.20,
+    "per_model_cu_cap_l4": 2.5,
+    "per_model_cu_cap_a100": 5.5,
+    "per_model_wall_cap_min": 45.0,
+    "optional_diag_cutoff_min": 35.0
+  },
+  "dark_definition": {
+    "probe_dim_r": 38,
+    "bright_energy_threshold": 0.99,
+    "report_thresholds": [0.95, 0.98, 0.99, 0.995, 0.999]
+  },
+  "prior_model": {
+    "ridge_alpha_grid": [1.0, 10.0, 100.0, 1000.0],
+    "cov_eta_grid": [0.05, 0.2, 0.5, 0.8, 1.0],
+    "oof_folds": 5,
+    "output_cov_rank": 64,
+    "solver_jitter": 1e-12
+  },
+  "control": {
+    "tau_candidates": [0.05, 0.02, 0.01, 0.005],
+    "radius_alpha": 0.01,
+    "pilot_min_hits": 14,
+    "pilot_target_tol": 0.10,
+    "pilot_max_med_lin_err": 0.05,
+    "zero_a_rel_tol": 1e-8
+  },
+  "p0_thresholds": {
+    "zero_hook_max_logit_diff": 2e-4,
+    "zero_pert_D_max": 1e-5,
+    "zero_pert_abs_dF_max": 5e-6,
+    "jvp_fd_median_max": 5e-3,
+    "adjoint_rel_max": 1e-3,
+    "linearity_rel_max": 1e-4,
+    "jvp_batched_rel_max": 1e-4,
+    "mid_chain_rel_max": 1e-4,
+    "archived_cond_max": 1e-6,
+    "fd_step_sizes": [0.0005, 0.001, 0.005, 0.01],
+    "near_zero_denom_abs_floor": 1e-6
+  },
+  "stats": {
+    "bootstrap_resamples": 20000
+  },
+  "data": {
+    "id_families": [
+      "state_tracking",
+      "attribute_binding",
+      "simple_arithmetic",
+      "instruction_priority"
+    ],
+    "options": ["A", "B", "C", "D"],
+    "n_dev_fit": 96,
+    "n_dev_tune": 16,
+    "n_dev_pilot": 16,
+    "n_cal": 24,
+    "n_confirm_id": 64,
+    "n_confirm_ood": 32,
+    "n_traj_panel": 12
+  },
+  "models": {
+    "qwen25_3b": {
+      "label": "Qwen2.5-3B-Instruct",
+      "hf_id": "Qwen/Qwen2.5-3B-Instruct",
+      "revision": "aa8e72537993ba99e69dfaafa59ed015b17504d1",
+      "arch_family": "Qwen2 (Pre-RMSNorm, GQA, tied)",
+      "params_b": 3.09,
+      "num_layers": 36,
+      "hidden_size": 2048,
+      "source_layer": 24,
+      "mid_layer": 30,
+      "target_layer": 36,
+      "gpu": "L4",
+      "high_mem": false,
+      "jvp_batch_size": 8,
+      "dev_jvp_batch_size": 10
+    },
+    "phi35_mini": {
+      "label": "Phi-3.5-mini-instruct",
+      "hf_id": "microsoft/Phi-3.5-mini-instruct",
+      "revision": "2fe192450127e6a83f7441aef6e3ca586c338b77",
+      "arch_family": "Phi-3 (Pre-RMSNorm, fused QKV/MLP, MHA, untied)",
+      "params_b": 3.82,
+      "num_layers": 32,
+      "hidden_size": 3072,
+      "source_layer": 21,
+      "mid_layer": 26,
+      "target_layer": 32,
+      "gpu": "L4",
+      "high_mem": false,
+      "jvp_batch_size": 4,
+      "dev_jvp_batch_size": 8
+    },
+    "qwen25_7b": {
+      "label": "Qwen2.5-7B-Instruct",
+      "hf_id": "Qwen/Qwen2.5-7B-Instruct",
+      "revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+      "arch_family": "Qwen2 (Pre-RMSNorm, GQA, untied)",
+      "params_b": 7.62,
+      "num_layers": 28,
+      "hidden_size": 3584,
+      "source_layer": 19,
+      "mid_layer": 23,
+      "target_layer": 28,
+      "gpu": "A100",
+      "high_mem": true,
+      "jvp_batch_size": 4,
+      "dev_jvp_batch_size": 8
+    },
+    "olmo2_7b": {
+      "label": "OLMo-2-1124-7B-Instruct",
+      "hf_id": "allenai/OLMo-2-1124-7B-Instruct",
+      "revision": "470b1fba1ae01581f270116362ee4aa1b97f4c84",
+      "arch_family": "OLMo-2 (Post-RMSNorm + QK-Norm, untied)",
+      "params_b": 7.30,
+      "num_layers": 32,
+      "hidden_size": 4096,
+      "source_layer": 21,
+      "mid_layer": 26,
+      "target_layer": 32,
+      "gpu": "A100",
+      "high_mem": true,
+      "jvp_batch_size": 4,
+      "dev_jvp_batch_size": 8
+    },
+    "llama31_8b": {
+      "label": "Llama-3.1-8B-Instruct",
+      "hf_id": "NousResearch/Meta-Llama-3.1-8B-Instruct",
+      "revision": "d10aef7999a2b5ba950ab3974312feeedbfe0b77",
+      "arch_family": "Llama-3.1 (Pre-RMSNorm, GQA, untied)",
+      "params_b": 8.03,
+      "num_layers": 32,
+      "hidden_size": 4096,
+      "source_layer": 21,
+      "mid_layer": 26,
+      "target_layer": 32,
+      "gpu": "A100",
+      "high_mem": true,
+      "jvp_batch_size": 4,
+      "dev_jvp_batch_size": 8
+    }
+  }
+}

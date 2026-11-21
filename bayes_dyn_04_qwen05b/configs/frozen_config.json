@@ -1,0 +1,58 @@
+{
+  "experiment_id": "BAYES-DYN-04",
+  "frozen_utc": "2026-11-20T05:38:04.267543+00:00",
+  "model_id": "Qwen/Qwen2.5-0.5B-Instruct",
+  "model_revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+  "full_all_params_weight_sha256": "376624fadb288209da20a4e6bff39f6b7d036a3e8b56616f517b0db5908fcc11",
+  "prior_alpha": 100.0,
+  "prior_eta": 0.05,
+  "s_A_sq": 7.523562157162589,
+  "near_zero_norm_thresh": 2.134485809657395,
+  "psd_floor_C": 1.1205323649851058e-11,
+  "psd_floor_R": 1.0290174311888285e-11,
+  "solver_jitter": 1e-12,
+  "tau_frozen": 0.05,
+  "working_regime_established": true,
+  "radius_alpha": 0.01,
+  "pilot_tau_diagnostics": {
+    "0.05": {
+      "tau": 0.05,
+      "hits_10pct": 16,
+      "n": 16,
+      "median_lin_rel_err": 0.004081726074218681,
+      "passed": true
+    }
+  },
+  "cal32_temperature_t": 2.013304053883849,
+  "cal32_fit_summary": {
+    "temperature_t": 2.013304053883849,
+    "n_cal_contexts": 32,
+    "n_q_perp": 8,
+    "d_dim": 896,
+    "denom_floor_applied": 1e-12,
+    "n_denoms_clamped": 0,
+    "min_raw_denom": 0.3501382305907652,
+    "median_raw_denom": 0.5749292041335927,
+    "median_per_dir_ratio": 1.8253981221840223,
+    "max_per_dir_ratio": 9.82670610813759
+  },
+  "throughput_sec_per_ctx": 0.369,
+  "data_file_sha256": {
+    "data/dev_pilot.jsonl": "c196c407ca789894d65efff493e93ffd05afef7b8a03ecbfc25760b4268c84f4",
+    "data/cal.jsonl": "8df42ebb3ab9c1f45b3bcc1d41605c2ca735fa3760a189013870a3c8b9f9eb75",
+    "data/confirm_id.jsonl": "e0ccd0d54aeace979edbf3331c7675a7ae8852bbb618d3267639cda0915166b2",
+    "data/confirm_ood.jsonl": "5259ba77c8a02e624cc0837308973d1514e4b1fcfa16ac065d64f15369280f0e"
+  },
+  "code_file_sha256": {
+    "src/__init__.py": "685baf1f5727d389594d0a9854f5aeaea654216b609807c5438ff0f14ca0a416",
+    "src/control_v04.py": "1c2951ad5c1450ec5037f3002be5620b2cbe8678fa98523f27619f9298936a0d",
+    "src/data_generator_v04.py": "3b431f1635bab53bc46ca35de0323dc3a4f019d126fab178d60c1c7ee36e4711",
+    "src/dev_diagnostics_p0a.py": "2e42370dc1dd4049a37fd0fe2928f29451d9f642009d059c6831a9029a0ddc1f",
+    "src/full_operator_map.py": "845a1156d82934c0f8e28e50963248547260eaac4ca1e0e4c98930eb0c875b85",
+    "src/probe_bank_v04.py": "3e7476fd9eff96b149da860be052c7d2858b05a59ff1df6a5c7aa253cd217339",
+    "src/report_generator_v04.py": "c3c474c9c53ac1112c0a1db0fa4cc3051d52296c220f8b99f8704ab9a8bb51b6",
+    "src/spectral_basis.py": "4cb417d6b29bf8196c64f5f9b040090c543dced32ba8c7d5667ce70afaa5a64a",
+    "src/transport.py": "4ac8a853ec57a4fc767b01672716f496f562048840529474395d40445224a7af",
+    "run_bayes_dyn_04.py": "d77b182d032ebce91143bb6b9f24cb70732700f2513dc0711bac5b73e4fce0b0"
+  }
+}

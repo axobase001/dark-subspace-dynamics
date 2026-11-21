@@ -1,0 +1,22 @@
+{
+  "confirm_id": {
+    "n_contexts": 96,
+    "n_states_replayed": 384,
+    "max_abs_diff_M_k_vs_archived_f32": 2.384185791015625e-07,
+    "max_abs_diff_C_k_vs_archived_f64": 2.6645352591003757e-15,
+    "max_support_residual_rel": 1.020874242763974e-12,
+    "min_eig_C_k_across_all": 9.975909926902584e-13,
+    "max_patch8_qperp_invariance_err": 1.1079109328113365e-15,
+    "passed": true
+  },
+  "confirm_ood": {
+    "n_contexts": 32,
+    "n_states_replayed": 128,
+    "max_abs_diff_M_k_vs_archived_f32": 1.1920928955078125e-07,
+    "max_abs_diff_C_k_vs_archived_f64": 1.3322676295501878e-15,
+    "max_support_residual_rel": 8.884356547471212e-13,
+    "min_eig_C_k_across_all": 9.981687864551415e-13,
+    "max_patch8_qperp_invariance_err": 1.3002468180470231e-15,
+    "passed": true
+  }
+}

@@ -1,0 +1,1 @@
+{"experiment_id": "BAYES-DYN-05", "model_key": "phi35_mini", "pid": 6457, "utc": "2026-11-20T07:49:02.449030+00:00", "epoch": 1795160942.449026, "status": "COMPLETED", "phase": "DONE", "step": 1, "total": 1, "note": "Finished phi35_mini cleanly in 1025.0s"}

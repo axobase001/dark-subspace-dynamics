@@ -1,0 +1,30 @@
+{"utc": "2026-11-20T07:31:38.716634+00:00", "event": "session_created", "session_line": "[bayes-dyn-05-phi35-mini] gpu-l4-s-ass1a0-2mo5jrucdlmpf | Hardware: L4 | Shape: Standard | Variant: GPU | Status: IDLE", "rate_hr": 1.94, "eff_cu_cap": 2.5, "hard_deadline_min": 45.0}
+{"utc": "2026-11-20T07:31:47.582247+00:00", "event": "detached_launch_ok", "out": "[colab] A new version of Colab CLI is available: 0.8.0 (current: 0.7.4)\n[colab] Run 'colab update' to update.\n[colab] To silence this check, set \"enable_update_check\": false in ~/.config/colab-cli/settings.json\n\nDETACHED_LAUNCH_OK model=phi35_mini pid=6456"}
+{"utc": "2026-11-20T07:32:20.106756+00:00", "event": "heartbeat", "wall_min": 0.77, "phase": "LOAD_MODEL", "step": 0, "status": "RUNNING", "no_prog_s": 0.0}
+{"utc": "2026-11-20T07:32:52.651453+00:00", "event": "heartbeat", "wall_min": 1.31, "phase": "SPECTRAL_SVD", "step": 0, "status": "RUNNING", "no_prog_s": 0.0}
+{"utc": "2026-11-20T07:34:25.077732+00:00", "event": "heartbeat", "wall_min": 2.86, "phase": "DEV_FIT96", "step": 0, "status": "RUNNING", "no_prog_s": 0.0}
+{"utc": "2026-11-20T07:34:57.431227+00:00", "event": "heartbeat", "wall_min": 3.4, "phase": "DEV_FIT96", "step": 8, "status": "RUNNING", "no_prog_s": 0.0}
+{"utc": "2026-11-20T07:35:32.416872+00:00", "event": "heartbeat", "wall_min": 3.98, "phase": "DEV_FIT96", "step": 24, "status": "RUNNING", "no_prog_s": 0.0}
+{"utc": "2026-11-20T07:36:12.958317+00:00", "event": "heartbeat", "wall_min": 4.52, "phase": "DEV_FIT96", "step": 32, "status": "RUNNING", "no_prog_s": 0.0}
+{"utc": "2026-11-20T07:36:49.827530+00:00", "event": "heartbeat", "wall_min": 5.2, "phase": "DEV_FIT96", "step": 40, "status": "RUNNING", "no_prog_s": 0.0}
+{"utc": "2026-11-20T07:37:21.982972+00:00", "event": "heartbeat", "wall_min": 5.81, "phase": "DEV_FIT96", "step": 48, "status": "RUNNING", "no_prog_s": 0.0}
+{"utc": "2026-11-20T07:37:53.933849+00:00", "event": "heartbeat", "wall_min": 6.35, "phase": "DEV_FIT96", "step": 64, "status": "RUNNING", "no_prog_s": 0.0}
+{"utc": "2026-11-20T07:38:26.225215+00:00", "event": "heartbeat", "wall_min": 6.88, "phase": "DEV_FIT96", "step": 72, "status": "RUNNING", "no_prog_s": 0.0}
+{"utc": "2026-11-20T07:39:02.060198+00:00", "event": "heartbeat", "wall_min": 7.48, "phase": "DEV_FIT96", "step": 80, "status": "RUNNING", "no_prog_s": 0.0}
+{"utc": "2026-11-20T07:39:34.177173+00:00", "event": "heartbeat", "wall_min": 8.01, "phase": "DEV_FIT96", "step": 88, "status": "RUNNING", "no_prog_s": 0.0}
+{"utc": "2026-11-20T07:40:06.297260+00:00", "event": "heartbeat", "wall_min": 8.55, "phase": "DEV_TUNE16", "step": 0, "status": "RUNNING", "no_prog_s": 0.0}
+{"utc": "2026-11-20T07:40:45.415867+00:00", "event": "heartbeat", "wall_min": 9.08, "phase": "DEV_TUNE16", "step": 8, "status": "RUNNING", "no_prog_s": 0.0}
+{"utc": "2026-11-20T07:41:17.855612+00:00", "event": "heartbeat", "wall_min": 9.74, "phase": "FIT_PRIOR", "step": 0, "status": "RUNNING", "no_prog_s": 0.0}
+{"utc": "2026-11-20T07:41:51.560250+00:00", "event": "heartbeat", "wall_min": 10.28, "phase": "CAL_24", "step": 8, "status": "RUNNING", "no_prog_s": 0.0}
+{"utc": "2026-11-20T07:42:28.848321+00:00", "event": "heartbeat", "wall_min": 10.91, "phase": "CONFIRM_CONFIRM_ID", "step": 0, "status": "RUNNING", "no_prog_s": 0.0}
+{"utc": "2026-11-20T07:43:01.009713+00:00", "event": "heartbeat", "wall_min": 11.46, "phase": "CONFIRM_CONFIRM_ID", "step": 8, "status": "RUNNING", "no_prog_s": 0.0}
+{"utc": "2026-11-20T07:43:33.226279+00:00", "event": "heartbeat", "wall_min": 12.0, "phase": "CONFIRM_CONFIRM_ID", "step": 16, "status": "RUNNING", "no_prog_s": 0.0}
+{"utc": "2026-11-20T07:44:05.360348+00:00", "event": "heartbeat", "wall_min": 12.53, "phase": "CONFIRM_CONFIRM_ID", "step": 24, "status": "RUNNING", "no_prog_s": 0.0}
+{"utc": "2026-11-20T07:45:04.322962+00:00", "event": "heartbeat", "wall_min": 13.07, "phase": "CONFIRM_CONFIRM_ID", "step": 40, "status": "RUNNING", "no_prog_s": 0.0}
+{"utc": "2026-11-20T07:45:39.556455+00:00", "event": "heartbeat", "wall_min": 14.05, "phase": "CONFIRM_CONFIRM_ID", "step": 56, "status": "RUNNING", "no_prog_s": 0.0}
+{"utc": "2026-11-20T07:46:18.087424+00:00", "event": "heartbeat", "wall_min": 14.72, "phase": "CONFIRM_CONFIRM_OOD", "step": 0, "status": "RUNNING", "no_prog_s": 0.0}
+{"utc": "2026-11-20T07:46:51.236726+00:00", "event": "heartbeat", "wall_min": 15.28, "phase": "CONFIRM_CONFIRM_OOD", "step": 8, "status": "RUNNING", "no_prog_s": 0.0}
+{"utc": "2026-11-20T07:47:23.926172+00:00", "event": "heartbeat", "wall_min": 15.83, "phase": "CONFIRM_CONFIRM_OOD", "step": 16, "status": "RUNNING", "no_prog_s": 0.0}
+{"utc": "2026-11-20T07:47:57.246229+00:00", "event": "heartbeat", "wall_min": 16.38, "phase": "CONFIRM_CONFIRM_OOD", "step": 24, "status": "RUNNING", "no_prog_s": 0.0}
+{"utc": "2026-11-20T07:48:35.924606+00:00", "event": "heartbeat", "wall_min": 16.93, "phase": "TRAJECTORY_12", "step": 0, "status": "RUNNING", "no_prog_s": 0.0}
+{"utc": "2026-11-20T07:49:10.159128+00:00", "event": "heartbeat", "wall_min": 17.58, "phase": "DONE", "step": 1, "status": "COMPLETED", "no_prog_s": 0.0}

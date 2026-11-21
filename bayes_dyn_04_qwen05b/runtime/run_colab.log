@@ -1,0 +1,17 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights:  76%|███████▌  | 219/290 [00:00<00:00, 2072.48it/s]Loading weights: 100%|██████████| 290/290 [00:00<00:00, 2089.03it/s]
+[04] Loaded Qwen/Qwen2.5-0.5B-Instruct@7ae557604adf on NVIDIA L4 (V_dark match err=0.00e+00)
+/usr/local/lib/python3.13/dist-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+[04 P0] passed=True | FD=1.31e-04 | adj=2.35e-05 | lin=2.33e-06 | z20_chain=2.38e-06
+[04 DEV-PILOT] tau=0.05: hits=16/16 (>=14), med_lin_rel_err=0.41% (<=5%), PASS=True
+[04 THROUGHPUT] ~0.37s/ctx -> estimated full panel (~160 ctx) = 1.7 min (well within 60 min / 2 CU!)
+[04 FROZEN] tau=0.05 (working_regime=True), CAL32 temp t=2.0133 -> frozen_config.json saved!
+[04 CONFIRM_ID] Running Stage A -> commit -> Stage B on n=96 contexts...
+[04 CONFIRM_OOD] Running Stage A -> commit -> Stage B on n=32 contexts...
+[04 CONFIRM-ID96] Link1 L_perp: +0.08897 [0.07874539347047317, 0.10017344276026546] (-41.35%, PASS=True)
+[04 CONFIRM-ID96] Link2 F0 MSE: +0.000511 [0.00024400007688660295, 0.0007827601811746174] (-14.96%, PASS=True)
+[04 CONFIRM-ID96] Link3 CtrlEr: +0.04125 [0.026311914126078282, 0.057086453835169464] (-29.06%, PASS=True)
+==============================================================================
+[04 COMPLETED] Elapsed: 149.0s (0.0414 GPU-hr) | Peak VRAM: 6353.3 MB
+==============================================================================

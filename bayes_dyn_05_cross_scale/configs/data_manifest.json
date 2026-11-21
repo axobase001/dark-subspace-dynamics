@@ -1,0 +1,198 @@
+{
+  "experiment_id": "BAYES-DYN-05",
+  "zero_overlap_verified": true,
+  "total_unique_contexts": 248,
+  "split_counts": {
+    "dev_fit_96": {
+      "n": 96,
+      "families": {
+        "attribute_binding": 24,
+        "instruction_priority": 24,
+        "simple_arithmetic": 24,
+        "state_tracking": 24
+      },
+      "options": {
+        "A": 24,
+        "B": 24,
+        "C": 24,
+        "D": 24
+      }
+    },
+    "dev_tune_16": {
+      "n": 16,
+      "families": {
+        "attribute_binding": 4,
+        "instruction_priority": 4,
+        "simple_arithmetic": 4,
+        "state_tracking": 4
+      },
+      "options": {
+        "A": 5,
+        "B": 4,
+        "C": 4,
+        "D": 3
+      }
+    },
+    "dev_pilot_16": {
+      "n": 16,
+      "families": {
+        "attribute_binding": 4,
+        "instruction_priority": 4,
+        "simple_arithmetic": 4,
+        "state_tracking": 4
+      },
+      "options": {
+        "A": 4,
+        "B": 4,
+        "C": 4,
+        "D": 4
+      }
+    },
+    "cal_24": {
+      "n": 24,
+      "families": {
+        "attribute_binding": 6,
+        "instruction_priority": 6,
+        "simple_arithmetic": 6,
+        "state_tracking": 6
+      },
+      "options": {
+        "A": 7,
+        "B": 5,
+        "C": 6,
+        "D": 6
+      }
+    },
+    "confirm_id_64": {
+      "n": 64,
+      "families": {
+        "attribute_binding": 16,
+        "instruction_priority": 16,
+        "simple_arithmetic": 16,
+        "state_tracking": 16
+      },
+      "options": {
+        "A": 16,
+        "B": 16,
+        "C": 16,
+        "D": 16
+      }
+    },
+    "confirm_ood_32": {
+      "n": 32,
+      "families": {
+        "two_stage_conditional_update_relational_lookup": 32
+      },
+      "options": {
+        "A": 8,
+        "B": 8,
+        "C": 8,
+        "D": 8
+      }
+    }
+  },
+  "pre_registered_trajectory_panel_12": [
+    "CID4_ST_008",
+    "CID4_ST_010",
+    "CID4_ST_015",
+    "CID4_AT_009",
+    "CID4_AT_010",
+    "CID4_AT_013",
+    "CID4_SI_001",
+    "CID4_SI_008",
+    "CID4_SI_016",
+    "CID4_IN_003",
+    "CID4_IN_006",
+    "CID4_IN_008"
+  ],
+  "S_mispair_8x8": [
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    [
+      -1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      -1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      -1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      -1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      -1.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      -1.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0
+    ]
+  ],
+  "file_sha256": {
+    "data/dev_fit_96.jsonl": "548067a21c2eb19f65499642d6a2b5dffc5b4e53d2005af514ff0ec6c3ac4fd5",
+    "data/dev_tune_16.jsonl": "0184985b34f4d6a3869a47566918d15d0e13162a9f4270ea8db9cc527bbd78c2",
+    "data/dev_pilot_16.jsonl": "c196c407ca789894d65efff493e93ffd05afef7b8a03ecbfc25760b4268c84f4",
+    "data/cal_24.jsonl": "e4374080b8f299d2788e509f79a0134e87c09be678886db24dd3b298f025eb17",
+    "data/confirm_id_64.jsonl": "ef551b084be4047897db12b647908ea08473baa5812bafb44914f0de44ba757d",
+    "data/confirm_ood_32.jsonl": "5259ba77c8a02e624cc0837308973d1514e4b1fcfa16ac065d64f15369280f0e"
+  }
+}

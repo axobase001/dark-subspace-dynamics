@@ -1,0 +1,1 @@
+{"experiment_id": "BAYES-DYN-05", "model_key": "qwen25_7b", "pid": 1359, "utc": "2026-11-20T09:27:25.642520+00:00", "epoch": 1795166845.6425152, "status": "COMPLETED", "phase": "DONE", "step": 1, "total": 1, "note": "Finished qwen25_7b cleanly in 1750.6s"}

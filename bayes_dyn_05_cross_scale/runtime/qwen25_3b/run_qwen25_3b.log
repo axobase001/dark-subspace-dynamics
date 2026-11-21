@@ -1,0 +1,21 @@
+[05:qwen25_3b] Loading Qwen/Qwen2.5-3B-Instruct@aa8e72537993 (FP32, eager, low_cpu_mem_usage=True)...
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Fetching 2 files:   0%|          | 0/2 [00:00<?, ?it/s]Fetching 2 files:  50%|█████     | 1/2 [00:19<00:19, 19.93s/it]Fetching 2 files: 100%|██████████| 2/2 [00:19<00:00,  9.97s/it]
+Loading weights:   0%|          | 0/434 [00:00<?, ?it/s]Loading weights:   0%|          | 1/434 [00:00<00:48,  8.96it/s]Loading weights:  21%|██        | 89/434 [00:00<00:00, 469.60it/s]Loading weights:  34%|███▍      | 147/434 [00:00<00:00, 486.56it/s]Loading weights:  45%|████▌     | 197/434 [00:00<00:00, 481.66it/s]Loading weights:  59%|█████▉    | 255/434 [00:00<00:00, 497.54it/s]Loading weights:  70%|███████   | 305/434 [00:00<00:00, 498.24it/s]Loading weights:  82%|████████▏ | 355/434 [00:00<00:00, 493.95it/s]Loading weights:  95%|█████████▍| 411/434 [00:00<00:00, 489.29it/s]Loading weights: 100%|██████████| 434/434 [00:00<00:00, 483.79it/s]
+[05:qwen25_3b] SVD done in 23.5s (cuda) | d=2048 V=151936 n_dark_99=61 (3.0%) tail38_energy=0.5235% tie=True
+[05:qwen25_3b] Option tokens (encode_bare): {'A': 32, 'B': 33, 'C': 34, 'D': 35} decoded={'A': "'A'", 'B': "'B'", 'C': "'C'", 'D': "'D'"} mass=1.0000
+/usr/local/lib/python3.13/dist-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+[05:qwen25_3b P0] passed=True | hook=4.01e-05 | zeroD=0.0e+00 zeroDF=0.0e+00 | FD=3.74e-04 | adj=1.41e-05 | lin=5.57e-06 | zmid=5.77e-06
+[05:qwen25_3b DEV] Collected 112 exact 38-D Jacobians in 265.8s (2.37s/ctx). Fitting prior...
+[05:qwen25_3b PRIOR] Selected alpha=100.0, eta=0.05 | s_A^2=5.287 | DEV-tune L0=0.3514 -> L8=0.3014 (-14.21%)
+[05:qwen25_3b PILOT] tau=0.05: hits=16/16, med_lin_err=0.09%, PASS=True
+[05:qwen25_3b FROZEN] tau=0.05 (working_regime=True), CAL24 temp t=1.6712
+[05:qwen25_3b CONFIRM_ID] Running Stage A -> commit -> Stage B on n=64...
+[05:qwen25_3b CONFIRM_OOD] Running Stage A -> commit -> Stage B on n=32...
+[05:qwen25_3b ID64] Link1 L_perp: +0.08089 [0.07270195006927276, 0.08951328816335344] (-15.15%, PASS=True)
+[05:qwen25_3b ID64] Link2 F0 MSE: +0.002143 [0.0013299403769386619, 0.00310051273924526] (-21.52%, PASS=True)
+[05:qwen25_3b ID64] Link3 CtrlEr: +0.30564 [0.22516652345657348, 0.3899062007665633] (-56.18%, PASS=True)
+==============================================================================
+[05:qwen25_3b COMPLETED] Elapsed: 720.3s (0.2001 GPU-hr) | Peak VRAM: 12378.9 MB
+==============================================================================

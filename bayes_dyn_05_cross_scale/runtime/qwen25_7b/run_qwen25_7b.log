@@ -1,0 +1,21 @@
+[05-7B:qwen25_7b] Loading Qwen/Qwen2.5-7B-Instruct@a09a35458c70 (FP32, eager, low_cpu_mem_usage=True)...
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files:  25%|██▌       | 1/4 [00:43<02:10, 43.44s/it]Fetching 4 files: 100%|██████████| 4/4 [00:43<00:00, 10.86s/it]
+Loading weights:   0%|          | 0/339 [00:00<?, ?it/s]Loading weights:   0%|          | 1/339 [00:00<01:47,  3.13it/s]Loading weights:  12%|█▏        | 41/339 [00:00<00:02, 120.79it/s]Loading weights:  19%|█▉        | 64/339 [00:00<00:01, 142.47it/s]Loading weights:  26%|██▌       | 88/339 [00:00<00:01, 153.32it/s]Loading weights:  33%|███▎      | 112/339 [00:00<00:01, 164.71it/s]Loading weights:  40%|████      | 136/339 [00:00<00:01, 171.07it/s]Loading weights:  47%|████▋     | 160/339 [00:01<00:01, 173.69it/s]Loading weights:  53%|█████▎    | 179/339 [00:01<00:01, 152.50it/s]Loading weights:  58%|█████▊    | 196/339 [00:01<00:01, 106.52it/s]Loading weights:  62%|██████▏   | 209/339 [00:01<00:01, 90.84it/s] Loading weights:  65%|██████▍   | 220/339 [00:02<00:01, 75.99it/s]Loading weights:  68%|██████▊   | 232/339 [00:02<00:01, 81.16it/s]Loading weights:  72%|███████▏  | 244/339 [00:02<00:01, 75.45it/s]Loading weights:  76%|███████▌  | 256/339 [00:02<00:01, 75.35it/s]Loading weights:  79%|███████▉  | 268/339 [00:04<00:03, 18.64it/s]Loading weights:  83%|████████▎ | 282/339 [00:04<00:02, 25.38it/s]Loading weights:  86%|████████▌ | 290/339 [00:04<00:01, 26.66it/s]Loading weights:  88%|████████▊ | 297/339 [00:05<00:02, 15.26it/s]Loading weights: 100%|██████████| 339/339 [00:05<00:00, 56.93it/s]
+[05-7B:qwen25_7b] SVD done in 69.1s (cuda) | d=3584 V=152064 n_dark_99=145 (4.0%) tail38_energy=0.1246% tie=False
+[05-7B:qwen25_7b] Option tokens (encode_bare): {'A': 32, 'B': 33, 'C': 34, 'D': 35} decoded={'A': "'A'", 'B': "'B'", 'C': "'C'", 'D': "'D'"} mass=1.0000
+/usr/local/lib/python3.13/dist-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+[05-7B:qwen25_7b P0] passed=True | hook_vs_cpu=7.92e-05 | zeroD=0.0e+00 zeroDF=0.0e+00 | FD=2.40e-04 | adj=8.19e-05 | lin=4.30e-05 | zmid=3.09e-05
+[05-7B:qwen25_7b DEV] Collected 112 exact 38-D Jacobians in 635.2s (5.67s/ctx). Fitting prior...
+[05-7B:qwen25_7b PRIOR] Selected alpha=100.0, eta=0.2 | s_A^2=5.479 | DEV-tune L0=0.2462 -> L8=0.2011 (-18.32%)
+[05-7B:qwen25_7b PILOT] tau=0.05: hits=16/16, med_lin_err=0.14%, PASS=True
+[05-7B:qwen25_7b FROZEN] tau=0.05 (working_regime=True), CAL24 temp t=1.4812
+[05-7B:qwen25_7b CONFIRM_ID] Streaming prefix + Stage A -> commit -> Stage B on n=64...
+[05-7B:qwen25_7b CONFIRM_OOD] Streaming prefix + Stage A -> commit -> Stage B on n=32...
+[05-7B:qwen25_7b ID64] Link1 L_perp: +0.06382 [0.05208957697024656, 0.07835505686888347] (-18.63%, PASS=True)
+[05-7B:qwen25_7b ID64] Link2 F0 MSE: +0.000814 [0.000612984193435417, 0.0010348280496486038] (-42.08%, PASS=True)
+[05-7B:qwen25_7b ID64] Link3 CtrlEr: +0.46604 [0.3651645690202713, 0.5720364719629285] (-65.08%, PASS=True)
+==============================================================================
+[05-7B:qwen25_7b COMPLETED] Elapsed: 1750.6s (0.4863 GPU-hr) | Peak VRAM: 17140.0 MB
+==============================================================================

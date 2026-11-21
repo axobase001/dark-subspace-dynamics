@@ -1,0 +1,1 @@
+{"experiment_id": "BAYES-DYN-05", "model_key": "llama31_8b", "pid": 749, "utc": "2026-11-20T10:41:10.979780+00:00", "epoch": 1795171270.9797754, "status": "COMPLETED", "phase": "DONE", "step": 1, "total": 1, "note": "Finished llama31_8b cleanly in 2076.1s"}

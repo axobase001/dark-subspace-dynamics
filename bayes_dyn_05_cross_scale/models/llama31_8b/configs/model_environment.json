@@ -1,0 +1,124 @@
+{
+  "experiment_id": "BAYES-DYN-05",
+  "model_key": "llama31_8b",
+  "label": "Llama-3.1-8B-Instruct",
+  "arch_family": "Llama-3.1 (Pre-RMSNorm, GQA, untied)",
+  "params_b": 8.03,
+  "execution_mode": "exact_fp32_prefix_streamed_suffix_gpu_resident",
+  "timestamp_utc": "2026-11-20T10:11:31.663758+00:00",
+  "model_id": "NousResearch/Meta-Llama-3.1-8B-Instruct",
+  "model_revision": "d10aef7999a2b5ba950ab3974312feeedbfe0b77",
+  "full_all_params_weight_sha256": "5303ccc87494b83d0985cc68efec6c7d1a66d3960d0347db527b4bfef14fd34f",
+  "dtype": "torch.float32",
+  "attn_implementation": "eager",
+  "allow_tf32": false,
+  "num_layers": 32,
+  "hidden_size": 4096,
+  "probe_dim_r": 38,
+  "source_layer": 21,
+  "mid_layer": 26,
+  "target_layer": 32,
+  "gpu_name": "NVIDIA L4",
+  "gpu_total_vram_gb": 22.03,
+  "torch_version": "2.14.1+cu130",
+  "cuda_version": "13.0",
+  "python_version": "3.13.16",
+  "option_token_resolution": {
+    "chosen_convention": "encode_bare",
+    "chosen_ids": {
+      "A": 32,
+      "B": 33,
+      "C": 34,
+      "D": 35
+    },
+    "chosen_decoded": {
+      "A": "'A'",
+      "B": "'B'",
+      "C": "'C'",
+      "D": "'D'"
+    },
+    "candidate_mean_prob_mass_on_pilot4": {
+      "encode_bare": 0.999140066568657,
+      "encode_spaced": 7.734480798388145e-13
+    },
+    "all_candidates": {
+      "encode_bare": {
+        "A": 32,
+        "B": 33,
+        "C": 34,
+        "D": 35
+      },
+      "encode_spaced": {
+        "A": 362,
+        "B": 426,
+        "C": 356,
+        "D": 423
+      }
+    }
+  },
+  "spectral_diagnostics": {
+    "vocab_size": 128256,
+    "hidden_size": 4096,
+    "svd_device_used": "cuda",
+    "tie_word_embeddings_config": false,
+    "embed_unembed_same_data_ptr": false,
+    "embed_unembed_relative_frobenius_diff": 1.2412663720206751,
+    "svd_orthonormality_error_fp64": 2.061357295122685e-10,
+    "sigma_max": 94.5262680053711,
+    "sigma_min": 1.4527195692062378,
+    "sigma_median": 4.790892124176025,
+    "condition_number": 65.06848907470703,
+    "effective_rank": 2541.716029101854,
+    "n_bright_99": 3962,
+    "n_dark_99": 134,
+    "dark_99_dim_fraction": 0.03271484375,
+    "probe_dim_r": 38,
+    "strictly_inside_99_tail": true,
+    "tail_r_energy_frac": 0.0019192759499570386,
+    "dark_indices_range": [
+      4058,
+      4095
+    ],
+    "dark_probe_sigma_max": 2.646477222442627,
+    "dark_probe_sigma_min": 1.4527195692062378,
+    "threshold_table": {
+      "0.95": {
+        "n_bright": 3629,
+        "n_dark": 467,
+        "dark_dim_fraction": 0.114013671875
+      },
+      "0.98": {
+        "n_bright": 3867,
+        "n_dark": 229,
+        "dark_dim_fraction": 0.055908203125
+      },
+      "0.99": {
+        "n_bright": 3962,
+        "n_dark": 134,
+        "dark_dim_fraction": 0.03271484375
+      },
+      "0.995": {
+        "n_bright": 4017,
+        "n_dark": 79,
+        "dark_dim_fraction": 0.019287109375
+      },
+      "0.999": {
+        "n_bright": 4074,
+        "n_dark": 22,
+        "dark_dim_fraction": 0.00537109375
+      }
+    },
+    "rmsnorm_gamma_mean": 2.3445019721984863,
+    "rmsnorm_gamma_std": 0.1821344941854477,
+    "rmsnorm_eps": 1e-05,
+    "singular_values_quantiles": {
+      "p0": 1.4527195692062378,
+      "p5": 3.418543577194214,
+      "p25": 4.250236988067627,
+      "p50": 4.791254997253418,
+      "p75": 5.342638969421387,
+      "p95": 6.0869269371032715,
+      "p100": 94.5262680053711
+    }
+  }
+}

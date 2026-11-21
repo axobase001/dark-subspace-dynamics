@@ -1,0 +1,22 @@
+[05:phi35_mini] Loading microsoft/Phi-3.5-mini-instruct@2fe192450127 (FP32, eager, low_cpu_mem_usage=True)...
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[transformers] This model config has set a `rope_parameters['original_max_position_embeddings']` field, to be used together with `max_position_embeddings` to determine a scaling factor. Please set the `factor` field of `rope_parameters`with this ratio instead -- we recommend the use of this field over `original_max_position_embeddings`, as it is compatible with most model architectures.
+Fetching 2 files:   0%|          | 0/2 [00:00<?, ?it/s]Fetching 2 files:  50%|█████     | 1/2 [00:25<00:25, 25.93s/it]Fetching 2 files: 100%|██████████| 2/2 [00:25<00:00, 12.97s/it]
+Loading weights:   0%|          | 0/195 [00:00<?, ?it/s]Loading weights:   6%|▌         | 11/195 [00:00<00:01, 94.15it/s]Loading weights:  18%|█▊        | 35/195 [00:00<00:00, 171.18it/s]Loading weights:  27%|██▋       | 53/195 [00:00<00:00, 167.03it/s]Loading weights:  36%|███▋      | 71/195 [00:00<00:00, 168.33it/s]Loading weights:  46%|████▌     | 90/195 [00:00<00:00, 171.16it/s]Loading weights:  58%|█████▊    | 113/195 [00:00<00:00, 181.29it/s]Loading weights:  68%|██████▊   | 132/195 [00:00<00:00, 177.52it/s]Loading weights:  79%|███████▉  | 154/195 [00:00<00:00, 186.53it/s]Loading weights:  89%|████████▊ | 173/195 [00:00<00:00, 183.79it/s]Loading weights:  98%|█████████▊| 192/195 [00:01<00:00, 184.48it/s]Loading weights: 100%|██████████| 195/195 [00:01<00:00, 178.83it/s]
+[05:phi35_mini] SVD done in 24.5s (cuda) | d=3072 V=32064 n_dark_99=114 (3.7%) tail38_energy=0.2542% tie=False
+[05:phi35_mini] Option tokens (encode_bare): {'A': 319, 'B': 350, 'C': 315, 'D': 360} decoded={'A': "'A'", 'B': "'B'", 'C': "'C'", 'D': "'D'"} mass=1.0000
+/usr/local/lib/python3.13/dist-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+[05:phi35_mini P0] passed=True | hook=3.81e-05 | zeroD=0.0e+00 zeroDF=0.0e+00 | FD=1.58e-04 | adj=2.70e-06 | lin=3.54e-06 | zmid=3.84e-06
+[05:phi35_mini DEV] Collected 112 exact 38-D Jacobians in 392.7s (3.51s/ctx). Fitting prior...
+[05:phi35_mini PRIOR] Selected alpha=100.0, eta=0.05 | s_A^2=8.411 | DEV-tune L0=0.1162 -> L8=0.0889 (-23.46%)
+[05:phi35_mini PILOT] tau=0.05: hits=16/16, med_lin_err=0.18%, PASS=True
+[05:phi35_mini FROZEN] tau=0.05 (working_regime=True), CAL24 temp t=1.5661
+[05:phi35_mini CONFIRM_ID] Running Stage A -> commit -> Stage B on n=64...
+[05:phi35_mini CONFIRM_OOD] Running Stage A -> commit -> Stage B on n=32...
+[05:phi35_mini ID64] Link1 L_perp: +0.03398 [0.028636650611367942, 0.03994189079625052] (-22.22%, PASS=True)
+[05:phi35_mini ID64] Link2 F0 MSE: +0.000416 [0.00025703784619279796, 0.0006055814741310162] (-28.11%, PASS=True)
+[05:phi35_mini ID64] Link3 CtrlEr: +0.06131 [0.03494617938995362, 0.08967981338500972] (-41.29%, PASS=True)
+==============================================================================
+[05:phi35_mini COMPLETED] Elapsed: 1025.0s (0.2847 GPU-hr) | Peak VRAM: 15127.2 MB
+==============================================================================

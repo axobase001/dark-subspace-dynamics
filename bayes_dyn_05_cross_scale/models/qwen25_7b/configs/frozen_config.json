@@ -1,0 +1,65 @@
+{
+  "experiment_id": "BAYES-DYN-05",
+  "model_key": "qwen25_7b",
+  "frozen_utc": "2026-11-20T09:16:16.158194+00:00",
+  "model_id": "Qwen/Qwen2.5-7B-Instruct",
+  "model_revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+  "full_all_params_weight_sha256": "794486affd333ac7a2d93e15aa999b6e5fffcf7771b9468d948b3dce7a4294fb",
+  "prior_alpha": 100.0,
+  "prior_eta": 0.2,
+  "s_A_sq": 5.47924503013837,
+  "near_zero_norm_thresh": 1.779772849237233,
+  "psd_floor_C": 4.257751408386139e-12,
+  "psd_floor_R": 3.712858390032253e-12,
+  "solver_jitter": 1e-12,
+  "tau_frozen": 0.05,
+  "working_regime_established": true,
+  "radius_alpha": 0.01,
+  "pilot_tau_diagnostics": {
+    "0.05": {
+      "tau": 0.05,
+      "hits_10pct": 16,
+      "n": 16,
+      "median_lin_rel_err": 0.0013885498046877632,
+      "passed": true
+    }
+  },
+  "cal24_temperature_t": 1.4811682451595842,
+  "cal24_fit_summary": {
+    "temperature_t": 1.4811682451595842,
+    "n_cal_contexts": 24,
+    "n_q_perp": 8,
+    "d_dim": 3584,
+    "denom_floor_applied": 1e-12,
+    "n_denoms_clamped": 0,
+    "min_raw_denom": 0.5920664096722235,
+    "median_raw_denom": 0.7841693201602055,
+    "median_per_dir_ratio": 1.3578949107769083,
+    "max_per_dir_ratio": 3.0280210972021018
+  },
+  "option_token_ids": {
+    "A": 32,
+    "B": 33,
+    "C": 34,
+    "D": 35
+  },
+  "option_token_convention": "encode_bare",
+  "data_file_sha256": {
+    "data/dev_fit_96.jsonl": "548067a21c2eb19f65499642d6a2b5dffc5b4e53d2005af514ff0ec6c3ac4fd5",
+    "data/dev_tune_16.jsonl": "0184985b34f4d6a3869a47566918d15d0e13162a9f4270ea8db9cc527bbd78c2",
+    "data/dev_pilot_16.jsonl": "c196c407ca789894d65efff493e93ffd05afef7b8a03ecbfc25760b4268c84f4",
+    "data/cal_24.jsonl": "e4374080b8f299d2788e509f79a0134e87c09be678886db24dd3b298f025eb17",
+    "data/confirm_id_64.jsonl": "ef551b084be4047897db12b647908ea08473baa5812bafb44914f0de44ba757d",
+    "data/confirm_ood_32.jsonl": "5259ba77c8a02e624cc0837308973d1514e4b1fcfa16ac065d64f15369280f0e"
+  },
+  "code_file_sha256": {
+    "src/__init__.py": "528bc396ef3498df0caf75ae739e2657054f67e212999717bc75dfbf037ef523",
+    "src/control_v05.py": "f82dabbb1e97acfc09c102a7f5cdf69f72dfca31c751f9dc1b616c9c6844d073",
+    "src/full_operator_map_v05.py": "04bca91eb89ffc6273b2384ac82b85e24b90b2c3ef8d7f31aecfa54a0da71c14",
+    "src/prepare_data_v05.py": "bb27501f650d4d02c947b11514d49faa93b1ca265aff3a20e70aad7736719d32",
+    "src/probe_bank_v05.py": "a9dd4ad8cf0fdceb02726de644b5de76b4ba101d8126264e489100c9b4eaf72d",
+    "src/spectral_basis_v05.py": "f24d66a50cc36b54496c04ddfc76a02b126ddf89973a0faccdcc83ae4bcf937a",
+    "src/transport_v05.py": "a54fbab3c51711764d6473cca73b946a39787f12e92524c241a0734462d67867",
+    "run_bayes_dyn_05_7b_stream.py": "5b3df2627d8d49490ae589631fb61bcc3a136614a7f6f15b0717281cfe4d037b"
+  }
+}

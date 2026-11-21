@@ -1,0 +1,61 @@
+{
+  "all_p0_passed": true,
+  "fp64_synthetic_conditioning": {
+    "support_interp_rel_err": 2.1039420832261792e-16,
+    "C_k_support_norm": 5.291598426905934e-16,
+    "batch_vs_seq_M_rel_err": 1.9956046974672173e-16,
+    "batch_vs_seq_C_rel_err": 3.7354261782850734e-16,
+    "patch_q_perp_invariance_err": 1.5756389624424312e-15,
+    "proj_support_identity_rel_err": 2.755137617603484e-16,
+    "structured_R_quad_rel_err": 0.0,
+    "structured_R_inv_quad_rel_err": 0.0,
+    "passed_1e9": true
+  },
+  "zero_hook_max_logit_diff": 2.09808349609375e-05,
+  "zero_pert_matched_batch1": {
+    "max_D_geom": 0.0,
+    "max_abs_dF": 0.0
+  },
+  "jvp_batched8_vs_batch1_max_rel_err": 2.6426664508546357e-06,
+  "jvp_repeatability_max_rel_err": 2.5289214338583186e-06,
+  "jvp_linear_comb_max_rel_err": 2.3344652837729796e-06,
+  "mid_layer_z20_chain_max_rel_err": 2.3847554647720255e-06,
+  "jvp_fd_curve": {
+    "by_step": {
+      "0.0001": {
+        "median_rel_err": 0.004043027641328084,
+        "max_rel_err": 0.006215069255345297,
+        "median_abs_err": 0.011377008452891744
+      },
+      "0.0005": {
+        "median_rel_err": 0.0007362111108806362,
+        "max_rel_err": 0.001243057715447313,
+        "median_abs_err": 0.0021726433556364987
+      },
+      "0.001": {
+        "median_rel_err": 0.0003735564258748954,
+        "max_rel_err": 0.0006237516854853995,
+        "median_abs_err": 0.0011092412370368979
+      },
+      "0.005": {
+        "median_rel_err": 0.00013104848601768946,
+        "max_rel_err": 0.0001676966026828074,
+        "median_abs_err": 0.00036931148281505865
+      },
+      "0.01": {
+        "median_rel_err": 0.00038855187451636595,
+        "max_rel_err": 0.0007031387604925254,
+        "median_abs_err": 0.001184642641070487
+      }
+    },
+    "best_step": "0.005",
+    "best_median_rel_err": 0.00013104848601768946
+  },
+  "adjoint_consistency_max_rel_err": 2.350894310282688e-05,
+  "archived_conditioning_support_max_rel_err": 7.147863320087495e-13,
+  "isolation_checks": {
+    "budget_5th_rejected": true,
+    "learning_vjp_rejected": true,
+    "truth_replacement_sentinel_diff": 0.0
+  }
+}

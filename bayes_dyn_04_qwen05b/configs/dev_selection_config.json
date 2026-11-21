@@ -1,0 +1,30 @@
+{
+  "dev_fit_source": "old 224 excluding original validation32 (96 train + 64 test + 32 ood_test = 192)",
+  "dev_tune_source": "old original validation32 (32 contexts)",
+  "s_A_sq_frozen": 7.523562157162589,
+  "near_zero_norm_thresh_frozen": 2.134485809657395,
+  "selected": {
+    "alpha": 100.0,
+    "eta": 0.05,
+    "tune_L0_perp_norm": 0.1669874086042603,
+    "tune_L8_perp_norm": 0.0952186069088176,
+    "tune_avg_L0_L8": 0.13110300775653896,
+    "tune_rel_reduction_k8_vs_k0": 0.4297857083675451,
+    "tune_L0_raw_l2_sq": 1.2563401480976593,
+    "tune_L8_raw_l2_sq": 0.7163831075969204,
+    "C_cond_number": 125.66827448281859,
+    "R_top1_eig": 0.053135403002859294,
+    "R_lam_perp": 0.0005291541348834126
+  },
+  "fp64_synthetic_check": {
+    "support_interp_rel_err": 2.607022734263931e-16,
+    "C_k_support_norm": 7.433701113601474e-16,
+    "batch_vs_seq_M_rel_err": 2.4320166791392003e-16,
+    "batch_vs_seq_C_rel_err": 5.041354658851242e-16,
+    "patch_q_perp_invariance_err": 1.152877817348173e-15,
+    "proj_support_identity_rel_err": 2.0663532132026135e-16,
+    "structured_R_quad_rel_err": 1.4834078319870152e-16,
+    "structured_R_inv_quad_rel_err": 1.3147013352398772e-16,
+    "passed_1e9": true
+  }
+}
